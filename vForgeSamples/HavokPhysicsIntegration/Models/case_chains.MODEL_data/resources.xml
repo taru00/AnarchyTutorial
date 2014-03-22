@@ -1,0 +1,9 @@
+<root>
+    <Resources Version="1" Count="5" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/case_chains.MODEL_data\materials.xml" OwnerRes="4" Size="522" />
+        <Resource Manager="Textures" Filename="Models\Textures\case_chains_c_mu.dds" CustomInt="1,64" Size="43728" />
+        <Resource Manager="Textures" Filename="Models\Textures\case_chains_n_mu.dds" CustomInt="1,0" Size="43728" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/case_chains.MODEL" CustomInt="1,2" Size="56" />
+    </Resources>
+</root>

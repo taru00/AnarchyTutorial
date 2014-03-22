@@ -1,0 +1,15 @@
+<root>
+    <Resources Version="1" Count="11" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/HumanArcher.MODEL_data\materials.xml" OwnerRes="9" Size="1064" />
+        <Resource Manager="Animations" Filename="Models/HumanArcher.anim" Size="3126768" />
+        <Resource Manager="Textures" Filename="Models\Textures\HumanArcherArmor_D.dds" CustomInt="1,64" Size="2796216" />
+        <Resource Manager="Textures" Filename="Models\Textures\HumanArcherArmor_N.dds" CustomInt="1,0" Size="2796216" />
+        <Resource Manager="Textures" Filename="Models\Textures\HumanArcherArmor_S.dds" CustomInt="1,0" Size="2796216" />
+        <Resource Manager="Textures" Filename="Models\Textures\HumanArcherSkin_D.dds" CustomInt="1,64" Size="2796216" />
+        <Resource Manager="Textures" Filename="Models\Textures\HumanArcherSkin_N.dds" CustomInt="1,0" Size="2796216" />
+        <Resource Manager="Textures" Filename="Models\Textures\HumanArcherSkin_S.dds" CustomInt="1,0" Size="2796216" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/HumanArcher.MODEL" CustomInt="1,2" Size="112" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="392352" />
+    </Resources>
+</root>

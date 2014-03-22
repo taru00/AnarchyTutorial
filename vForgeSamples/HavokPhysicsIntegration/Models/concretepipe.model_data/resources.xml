@@ -1,0 +1,11 @@
+<root>
+    <Resources Version="1" Count="7" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/ConcretePipe.model_data\materials.xml" OwnerRes="5" Size="559" />
+        <Resource Manager="Textures" Filename="Models\Textures\concrete.dds" CustomInt="1,64" Size="174776" />
+        <Resource Manager="Textures" Filename="Models\Textures\concrete_normalmap.dds" CustomInt="1,0" Size="174776" />
+        <Resource Manager="Textures" Filename="Models\Textures\concrete_specularmap.dds" CustomInt="1,0" Size="174776" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="63088" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/ConcretePipe.model" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+    </Resources>
+</root>

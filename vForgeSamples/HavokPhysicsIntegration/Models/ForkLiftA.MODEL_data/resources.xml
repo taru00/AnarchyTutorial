@@ -1,0 +1,12 @@
+<root>
+    <Resources Version="1" Count="8" PathType="Project">
+        <Resource Manager="FILE" Filename="Models\ForkLiftA.MODEL_data\materials.xml" OwnerRes="6" Size="513" />
+        <Resource Manager="Textures" Filename="Textures\Forklift_D.dds" CustomInt="1,0" Size="696" />
+        <Resource Manager="Textures" Filename="Textures\Forklift_N.dds" CustomInt="1,0" Size="699064" />
+        <Resource Manager="Textures" Filename="Textures\Forklift_S.dds" CustomInt="1,0" Size="699064" />
+        <Resource Manager="Textures" Filename="Atten\smooth.dds" CustomInt="1,1" Size="1024" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="62248" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\ForkLiftA.MODEL" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="403304" />
+    </Resources>
+</root>

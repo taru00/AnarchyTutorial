@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="TrollHammer" diffuse="Textures\TrollHammer.dds" normalmap="Textures\TrollHammerMud_NRM.dds" specularmap="Textures\TrollHammerMud_SPEC.dds" ambient="0,0,0,255" specmul="0.48" specexp="2" parallaxscale="-0.03" parallaxbias="-0.015" lightmapsize="512,512" lightmapID="0" userflags="0" sortingkey="0" doublesided="FALSE" Lighting="LightGrid" pass="Auto" transparency="opaque" alphathreshold="-1" depthwrite="TRUE" zbias="0,0,0" lightmapgran="0" datadirectoryrelative="FALSE" />
+    </Materials>
+</root>

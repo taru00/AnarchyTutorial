@@ -1,0 +1,10 @@
+<root>
+    <Resources Version="1" Count="6" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/Barrel.MODEL_data\materials.xml" OwnerRes="4" Size="555" />
+        <Resource Manager="Textures" Filename="Models\Textures\Prop_Wood_02_C.dds" CustomInt="1,64" Size="699064" />
+        <Resource Manager="Textures" Filename="Models\Textures\Prop_Wood_02_NB.dds" CustomInt="1,0" Size="699064" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/Barrel.MODEL" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="392352" />
+    </Resources>
+</root>

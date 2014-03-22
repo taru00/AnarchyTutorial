@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="Material #65" userflags="0" diffuse="\PlainWhite.DDS" Lighting="DynamicOnly" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" specmul="1" specexp="75" parallaxscale="-0.03" parallaxbias="-0.015" ambient="150,150,150,255" sortingkey="0" alphathreshold="0.25" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" />
+    </Materials>
+</root>

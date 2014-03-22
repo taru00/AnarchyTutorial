@@ -1,0 +1,10 @@
+<root>
+    <Resources Version="1" Count="6" PathType="Project">
+        <Resource Manager="Textures" Filename="Atten\smooth.dds" CustomInt="1,1" Size="1024" />
+        <Resource Manager="FILE" Filename="Models\Floor.MODEL_data\materials.xml" OwnerRes="4" Size="656" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="62776" />
+        <Resource Manager="Textures" Filename="Textures\Darkfloor_D.dds" CustomInt="1,64" Size="699064" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\Floor.MODEL" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="390384" />
+    </Resources>
+</root>

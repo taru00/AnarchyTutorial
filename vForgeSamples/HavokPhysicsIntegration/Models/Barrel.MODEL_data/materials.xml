@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="Wood_02" diffuse="Textures\Prop_Wood_02_C.dds" normalmap="Textures\Prop_Wood_02_NB.dds" specularmap="Textures\Prop_Wood_02_C.dds" Lighting="LightGrid" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" zbias="0,0,0" specmul="0.5" specexp="2" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="0.25" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" userflags="0" datadirectoryrelative="FALSE" />
+    </Materials>
+</root>

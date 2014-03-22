@@ -1,0 +1,10 @@
+<root>
+    <Resources Version="1" Count="6" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/case_little.MODEL_data\materials.xml" OwnerRes="4" Size="561" />
+        <Resource Manager="Textures" Filename="Models\Textures\case_little_c_mu.dds" CustomInt="1,64" Size="21864" />
+        <Resource Manager="Textures" Filename="Models\Textures\case_little_n_mu.dds" CustomInt="1,0" Size="43728" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="63088" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/case_little.MODEL" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+    </Resources>
+</root>

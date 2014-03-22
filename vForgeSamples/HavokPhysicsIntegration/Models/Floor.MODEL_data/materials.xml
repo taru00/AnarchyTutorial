@@ -1,0 +1,7 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="Ground" userflags="0" diffuse="..\Textures\Darkfloor_D.dds" Lighting="LightGrid" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" zbias="0,0,0" specmul="0" specexp="2" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" lightmapsize="128,128" lightmapgran="0" lightmapID="-1">
+            <Shader library="\Shaders\BaseShaders.ShaderLib" effect="BS_TintColor" paramstring="CullMode=back;DepthWrite=true;MaterialParams=0,2,-0.03,-0.015;AlphaThreshold=0.25;Color=0.8,1,0.9,1;" />
+        </Material>
+    </Materials>
+</root>

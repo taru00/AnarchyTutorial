@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="grid01" diffuse="..\..\Textures\grid01_c_mu.dds" normalmap="..\..\Textures\grid01_n_mu.dds" Lighting="LightGrid" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" zbias="0,0,0" specmul="0" specexp="64" parallaxscale="0" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="0.25" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" />
+    </Materials>
+</root>

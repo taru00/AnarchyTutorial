@@ -1,0 +1,12 @@
+<root>
+    <Resources Version="1" Count="8" PathType="Project">
+        <Resource Manager="Animations" Filename="Models/TrollHammerEntity.anim" Size="1024" />
+        <Resource Manager="FILE" Filename="Models/TrollHammerEntity.model_data\materials.xml" OwnerRes="6" Size="562" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHammer.dds" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHammerMud_NRM.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHammerMud_SPEC.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/TrollHammerEntity.model" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="392352" />
+    </Resources>
+</root>

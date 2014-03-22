@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="04 - Default" userflags="0" diffuse="Textures\concrete.dds" normalmap="Textures\concrete_normalmap.dds" specularmap="Textures\concrete_specularmap.dds" Lighting="LightGrid" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" specmul="0" specexp="2" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" />
+    </Materials>
+</root>

@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="case_chains_c" diffuse="Textures\case_chains_c_mu.dds" normalmap="Textures\case_chains_n_mu.dds" Lighting="LightGrid" transparency="alphasmooth" doublesided="FALSE" depthwrite="TRUE" zbias="0,0,0" specmul="0" specexp="64" parallaxscale="0" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="0.25" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" userflags="0" pass="Auto" datadirectoryrelative="FALSE" />
+    </Materials>
+</root>

@@ -1,0 +1,63 @@
+<root>
+  <info createdby="vForge version 2013.2.5.1" />
+  <header version="0" name="" description="" category="" convertible="True" autosavebinary="False" relativefilenames="False" />
+  <thumbnail type="jpg" size="1869">/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAEAAQADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5/ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAPon4FeCNNbwOdb1aysb6bUbpFiW4s/tYiiSXyyAu3Ksx35bJUAIx4Uiub/aX8NWWj69pOo6eiQJfQGFoI0wqmEIqkc4A2Mi7QABs96x/hZ8V5fAmj3emtpCahBNP9oVhOYWRioVgflYEYVccDHPXPHLfEHxde+NfEcmq36JCAohggTkRRAkhc9WOWJJPUk9BgD43B5ZmUc7niqsv3WvVappWVr3VtN+3mdEpw9morc5uty+1Wyn8O2ljFalbiE8u3IHXcVOc8nHBGPyBrDor6+UFJpvoFHEzoRnGFrSVnp03CiiirOcKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z</thumbnail>
+  <shape class="DynLightShape">
+    <property name="LightColor" value="255,160,117,255" />
+    <property name="LightAttenuationCurve" value="Smooth" />
+    <property name="CustomAttenuationCurveTexture" value="atten\smooth.dds" />
+    <property name="Multiplier" value="1.4" />
+    <property name="DistanceFadeEnd" value="0" />
+    <property name="DistanceFadeStart" value="0" />
+    <property name="UseSpecular" value="True" />
+    <property name="LightType" value="Directional" />
+    <property name="SpotAngle" value="45" />
+    <property name="ProjectedTexture" value="" />
+    <property name="Radius" value="1000" />
+    <property name="Triggered" value="True" />
+    <property name="CastStaticShadows" value="True" />
+    <property name="UsesLightMasks" value="False" />
+    <property name="AnimationCurve" value="" />
+    <property name="AnimationTiming" value="1" />
+    <property name="AnimationPhase" value="0" />
+    <property name="RemoveLightAfterAnimation" value="False" />
+    <property name="WorldInfluenceMask" value="255" />
+    <property name="ObjectInfluenceMask" value="255" />
+    <property name="VisibleBitmask" value="4294967295" />
+    <property name="IsStatic" value="True" />
+    <property name="ExportWhenNotRelevant" value="False" />
+    <property name="PreviewAsDynamicLight" value="False" />
+    <property name="TurnOffAfterLighting" value="True" />
+    <property name="ObjectKey" value="" />
+    <property name="Visible" value="True" />
+    <property name="Position" value="0,0,1449.653" />
+    <property name="Orientation" value="124,29,0" />
+    <property name="Scaling" value="1,1,1" />
+    <property name="TextLabel" value="" />
+    <property name="ShapeName" value="StaticDirectionalLight" />
+    <property name="UserDataString" value="" />
+    <property name="ExportShape" value="True" />
+    <property name="UniqueID" value="3204425436838756371" />
+    <linktarget class="LinkTargetTriggerComponent" name="ToggleOn" ID="ToggleOn" />
+    <linktarget class="LinkTargetTriggerComponent" name="ToggleOff" ID="ToggleOff" />
+  </shape>
+  <shape class="LightGridBoxShape">
+    <property name="PreviewCells" value="False" />
+    <property name="ShowIndicators" value="False" />
+    <property name="BoxSizeX" value="4000" />
+    <property name="BoxSizeY" value="4000" />
+    <property name="BoxSizeZ" value="1000" />
+    <property name="SubDivX" value="32" />
+    <property name="SubDivY" value="32" />
+    <property name="SubDivZ" value="8" />
+    <property name="Visible" value="True" />
+    <property name="Position" value="241.6805,556.6461,669.9875" />
+    <property name="Orientation" value="0,0,0" />
+    <property name="Scaling" value="0.7195958,0.7195958,1.452105" />
+    <property name="TextLabel" value="" />
+    <property name="ShapeName" value="LightGridBox" />
+    <property name="UserDataString" value="" />
+    <property name="ExportShape" value="True" />
+    <property name="UniqueID" value="3204425436838756359" />
+  </shape>
+</root>

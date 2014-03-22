@@ -1,0 +1,6 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="SKIN" diffuse="Textures\HumanArcherSkin_D.dds" transparency="opaque" doublesided="FALSE" specmul="1" specexp="5.65685" parallaxscale="-0.03" parallaxbias="-0.015" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" normalmap="Textures\HumanArcherSkin_N.dds" specularmap="Textures\HumanArcherSkin_S.dds" userflags="0" Lighting="LightGrid" pass="Auto" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" />
+        <Material name="ARMOR" diffuse="Textures\HumanArcherArmor_D.dds" transparency="opaque" doublesided="FALSE" specmul="1" specexp="5.65685" parallaxscale="-0.03" parallaxbias="-0.015" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" normalmap="Textures\HumanArcherArmor_N.dds" specularmap="Textures\HumanArcherArmor_S.dds" userflags="0" Lighting="LightGrid" pass="Auto" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" />
+    </Materials>
+</root>

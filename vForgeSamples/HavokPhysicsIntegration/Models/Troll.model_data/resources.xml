@@ -1,0 +1,18 @@
+<root>
+    <Resources Version="1" Count="14" PathType="Project">
+        <Resource Manager="Animations" Filename="Models/Troll.anim" Size="11080464" />
+        <Resource Manager="FILE" Filename="Models/Troll.model_data\materials.xml" OwnerRes="12" Size="1658" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollClothingLR.dds" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollClothingNrmGen_NRM_LR.dds" CustomInt="1,0" Size="22369620" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollClothing_SPEC_LR.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHammer.dds" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHammerMud_NRM.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHammerMud_SPEC.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHiPlyNrmlsHghtMapAddOns_LR.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHiPolyColourGrey01LR.dds" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Textures" Filename="Models\Textures\TrollHiPolySpecBaseLR.dds" CustomInt="1,0" Size="5592404" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/Troll.model" CustomInt="1,2" Size="168" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="392352" />
+    </Resources>
+</root>

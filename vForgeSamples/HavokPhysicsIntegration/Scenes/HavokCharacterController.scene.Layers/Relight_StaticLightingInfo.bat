@@ -1,0 +1,1 @@
+vLux.exe "" -project "D:\GDrive\AnarchyBook\vForgeSamples\PhysicsIntegration" -tempfolder "D:\GDrive\AnarchyBook\vForgeSamples\PhysicsIntegration\Scenes\HavokCharacterController.scene.Layers" -out "Scenes\HavokCharacterController" -quiet -minimized -config "D:\GDrive\AnarchyBook\vForgeSamples\PhysicsIntegration\Scenes\HavokCharacterController.scene.Layers\lighting.cfg"
