@@ -1,0 +1,2204 @@
+﻿<!--HBT-->
+<HBT version="1.0" appversion="2013.2" namespace="_Rigidbody_Ragdoll_hkb_">
+    <HBT_ITEM type="HavokTools.hkStateMachine" name="Root" priority="1">
+        <hkStateMachine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkStateMachine:Root:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <States>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Idle:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Taunt:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Defend:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Defend:ParentNodes</string>
+                </MangledTargetNames>
+            </States>
+            <Transitions>
+                <MangledTargetNames />
+            </Transitions>
+            <StartState>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkState:Defend:IncomingRefs</string>
+                </MangledTargetNames>
+            </StartState>
+            <StartStateSelectorVariable>
+                <MangledTargetNames />
+            </StartStateSelectorVariable>
+            <SyncVariable>
+                <MangledTargetNames />
+            </SyncVariable>
+            <UseRandomStartState>false</UseRandomStartState>
+            <StartStateChooser>
+                <MangledTargetNames />
+            </StartStateChooser>
+            <GoBackwardEvent>
+                <MangledTargetNames />
+            </GoBackwardEvent>
+            <RandomTransitionEvent>
+                <MangledTargetNames />
+            </RandomTransitionEvent>
+            <NextHigherStateEvent>
+                <MangledTargetNames />
+            </NextHigherStateEvent>
+            <NextLowerStateEvent>
+                <MangledTargetNames />
+            </NextLowerStateEvent>
+            <IsActiveVariable>
+                <MangledTargetNames />
+            </IsActiveVariable>
+            <CurrentStateIDVariable>
+                <MangledTargetNames />
+            </CurrentStateIDVariable>
+            <MaxSimultaneousTransitions>32</MaxSimultaneousTransitions>
+            <OffsetX>0.352180481</OffsetX>
+            <OffsetY>255.6279</OffsetY>
+            <Zoom>1.115729</Zoom>
+            <WrapAroundStateID>false</WrapAroundStateID>
+            <SelfTransitionMode>DontTransition</SelfTransitionMode>
+        </hkStateMachine>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkBehaviorFile:Rigidbody_Ragdoll.hkb:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Idle" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Idle_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Idle.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Orc Grunt Club Idle" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>66.72511</X>
+            <Y>249.13147</Y>
+            <TransitionsIn>
+                <MangledTargetNames />
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>0</StateID>
+            <StateProbability>1</StateProbability>
+            <W>132.557785</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator00" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:on Ground ModifierList:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Idle:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Ragdoll_Hierarchy Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Ragdoll_Hierarchy Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Ragdoll_Hierarchy Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.17000000178813934</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="RigidBodyRagdollControlsModifier00" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:RigidBodyRagdollControlsModifier00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:RigidBodyRagdollControlsModifier00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Rigid Body Ragdoll Controls Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_bones</string>
+                    <string>m_animationBlendFraction</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_keyFrameControlData</string>
+                            <string>m_durationToBlend</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="hkCustomParameterList">
+                                <Names>
+                                    <string>m_hierarchyGain</string>
+                                    <string>m_velocityDamping</string>
+                                    <string>m_accelerationGain</string>
+                                    <string>m_velocityGain</string>
+                                    <string>m_positionGain</string>
+                                    <string>m_positionMaxLinearVelocity</string>
+                                    <string>m_positionMaxAngularVelocity</string>
+                                    <string>m_snapGain</string>
+                                    <string>m_snapMaxLinearVelocity</string>
+                                    <string>m_snapMaxAngularVelocity</string>
+                                    <string>m_snapMaxLinearDistance</string>
+                                    <string>m_snapMaxAngularDistance</string>
+                                </Names>
+                                <Values>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Ragdoll_Hierarchy Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="xsd:float">0</anyType>
+                                    <anyType xsi:type="xsd:float">1</anyType>
+                                    <anyType xsi:type="xsd:float">0.6</anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Ragdoll_Position Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="xsd:float">1.4</anyType>
+                                    <anyType xsi:type="xsd:float">1.8</anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Ragdoll_Snap Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="xsd:float">0.3</anyType>
+                                    <anyType xsi:type="xsd:float">0.3</anyType>
+                                    <anyType xsi:type="xsd:float">0.03</anyType>
+                                    <anyType xsi:type="xsd:float">0.1</anyType>
+                                </Values>
+                            </anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_boneIndices</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="ArrayOfAnyType" />
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Ragdoll_Position Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Ragdoll_Position Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Ragdoll_Position Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.05000000074505806</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Ragdoll_Snap Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Ragdoll_Snap Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Ragdoll_Snap Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.10000000149011612</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Taunt" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Taunt:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Taunt:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Taunt_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Taunt.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Orc Grunt Club Taunt" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Taunt:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Taunt:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>62.4592133</X>
+            <Y>318.688843</Y>
+            <TransitionsIn>
+                <MangledTargetNames />
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>1</StateID>
+            <StateProbability>1</StateProbability>
+            <W>146.571075</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator01" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:on Ground ModifierList:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Taunt:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Defend" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Defend:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Defend:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Defend_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Defend.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Orc Grunt Club Defend" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Defend:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Defend:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>58.7704</X>
+            <Y>385</Y>
+            <TransitionsIn>
+                <MangledTargetNames />
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator02:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>2</StateID>
+            <StateProbability>1</StateProbability>
+            <W>156.464035</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="RigidBodyRagdollControlsModifier02" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:RigidBodyRagdollControlsModifier02:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:RigidBodyRagdollControlsModifier02:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Rigid Body Ragdoll Controls Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_bones</string>
+                    <string>m_animationBlendFraction</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_keyFrameControlData</string>
+                            <string>m_durationToBlend</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="hkCustomParameterList">
+                                <Names>
+                                    <string>m_hierarchyGain</string>
+                                    <string>m_velocityDamping</string>
+                                    <string>m_accelerationGain</string>
+                                    <string>m_velocityGain</string>
+                                    <string>m_positionGain</string>
+                                    <string>m_positionMaxLinearVelocity</string>
+                                    <string>m_positionMaxAngularVelocity</string>
+                                    <string>m_snapGain</string>
+                                    <string>m_snapMaxLinearVelocity</string>
+                                    <string>m_snapMaxAngularVelocity</string>
+                                    <string>m_snapMaxLinearDistance</string>
+                                    <string>m_snapMaxAngularDistance</string>
+                                </Names>
+                                <Values>
+                                    <anyType xsi:type="xsd:float">0.17</anyType>
+                                    <anyType xsi:type="xsd:float">0</anyType>
+                                    <anyType xsi:type="xsd:float">1</anyType>
+                                    <anyType xsi:type="xsd:float">0.6</anyType>
+                                    <anyType xsi:type="xsd:float">0.05</anyType>
+                                    <anyType xsi:type="xsd:float">1.4</anyType>
+                                    <anyType xsi:type="xsd:float">1.8</anyType>
+                                    <anyType xsi:type="xsd:float">0.1</anyType>
+                                    <anyType xsi:type="xsd:float">0.3</anyType>
+                                    <anyType xsi:type="xsd:float">0.3</anyType>
+                                    <anyType xsi:type="xsd:float">0.03</anyType>
+                                    <anyType xsi:type="xsd:float">0.1</anyType>
+                                </Values>
+                            </anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_boneIndices</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="ArrayOfAnyType" />
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator02" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator02:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator02:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:RigidBodyRagdollControlsModifier02:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Defend:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toBlownBack" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toBlownBack:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="CanGetKnockedDown" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:CanGetKnockedDown:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Bool</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toLyingDown" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toLyingDown:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="turnOffDriveBody" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:turnOffDriveBody:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="turnOnPowerBody" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:turnOnPowerBody:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="BlownBackAngle" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:BlownBackAngle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>-90</MinValue>
+            <MaxValue>90</MaxValue>
+            <DefaultValue>0</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toGetup" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toGetup:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="GetupDelay" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:GetupDelay:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>10</MaxValue>
+            <DefaultValue>3</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdle" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="turnOnProxy" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:turnOnProxy:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="TurnSpeed" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:TurnSpeed:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>-360</MinValue>
+            <MaxValue>360</MaxValue>
+            <DefaultValue>0</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toKnockBack" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toKnockBack:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="KnockedBackPlaybackSpeed" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:KnockedBackPlaybackSpeed:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>2</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toStepRight" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toStepRight:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toStepLeft" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toStepLeft:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toMoveForward" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toMoveForward:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="MoveForwardSpeed" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:MoveForwardSpeed:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>1</MinValue>
+            <MaxValue>2</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toShuffleRight" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toShuffleRight:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="ShuffleRightSpeed" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:ShuffleRightSpeed:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>-5</MinValue>
+            <MaxValue>0</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toMoveBackward" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toMoveBackward:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="MoveBackwardSpeed" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:MoveBackwardSpeed:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>1</MinValue>
+            <MaxValue>2</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toShuffleLeft" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toShuffleLeft:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="ShuffleLeftSpeed" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:ShuffleLeftSpeed:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>5</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toDefend" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toDefend:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toBaseIdle" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toBaseIdle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toRandomIdle" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toRandomIdle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="keyframeToPose" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:keyframeToPose:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdlePointAtTroll" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdlePointAtTroll:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleTaunt" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleTaunt:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleStepBack" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleStepBack:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleStepIn" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleStepIn:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleShuffleLeft" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleShuffleLeft:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleShuffleRight" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleShuffleRight:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleDefend" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleDefend:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleAttackSlash" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleAttackSlash:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toIdleJumpAttack" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toIdleJumpAttack:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="toAttackSlash" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:toAttackSlash:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="LocomotionStateID" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:LocomotionStateID:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Int32</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1000</MaxValue>
+            <DefaultValue>0</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="StartStagger" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:StartStagger:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="worldUpAxis" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:worldUpAxis:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Int32</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="CharacterControllerModifier00" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Controller Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_initialVelocity</string>
+                    <string>m_initialVelocityCoordinates</string>
+                    <string>m_motionMode</string>
+                    <string>m_forceDownwardMomentum</string>
+                    <string>m_applyGravity</string>
+                    <string>m_setInitialVelocity</string>
+                    <string>m_isTouchingGround</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_verticalGain</string>
+                            <string>m_horizontalCatchUpGain</string>
+                            <string>m_maxVerticalSeparation</string>
+                            <string>m_maxHorizontalSeparation</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>x</string>
+                            <string>y</string>
+                            <string>z</string>
+                            <string>w</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="xsd:string">INITIAL_VELOCITY_IN_WORLD_COORDINATES</anyType>
+                    <anyType xsi:type="xsd:string">MOTION_MODE_FOLLOW_ANIMATION</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="on Ground ModifierList" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:on Ground ModifierList:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:on Ground ModifierList:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Modifier List</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_modifiers</string>
+                    <string>m_enable</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="ArrayOfAnyType">
+                        <anyType xsi:type="hkRefMakerOfhkBaseNode">
+                            <MangledTargetNames>
+                                <string>__local__:HavokTools.hkCustomModifier:RigidBodyRagdollControlsModifier00:ParentNodes</string>
+                            </MangledTargetNames>
+                        </anyType>
+                        <anyType xsi:type="hkRefMakerOfhkBaseNode">
+                            <MangledTargetNames>
+                                <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</string>
+                            </MangledTargetNames>
+                        </anyType>
+                    </anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator03" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator03:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator03:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:Defend ModifierList:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Defend00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="Defend ModifierList" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:Defend ModifierList:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:Defend ModifierList:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Modifier List</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_modifiers</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="ArrayOfAnyType">
+                        <anyType xsi:type="hkRefMakerOfhkBaseNode">
+                            <MangledTargetNames>
+                                <string>__local__:HavokTools.hkCustomModifier:Defend RigidBodyRagdoll:ParentNodes</string>
+                            </MangledTargetNames>
+                        </anyType>
+                        <anyType xsi:type="hkRefMakerOfhkBaseNode">
+                            <MangledTargetNames>
+                                <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier:ParentNodes</string>
+                            </MangledTargetNames>
+                        </anyType>
+                        <anyType xsi:type="hkRefMakerOfhkBaseNode">
+                            <MangledTargetNames>
+                                <string>__local__:HavokTools.hkCustomModifier:Defend KeyframeBones:ParentNodes</string>
+                            </MangledTargetNames>
+                        </anyType>
+                    </anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="Defend RigidBodyRagdoll" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:Defend RigidBodyRagdoll:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:Defend RigidBodyRagdoll:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Rigid Body Ragdoll Controls Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_bones</string>
+                    <string>m_animationBlendFraction</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_keyFrameControlData</string>
+                            <string>m_durationToBlend</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="hkCustomParameterList">
+                                <Names>
+                                    <string>m_hierarchyGain</string>
+                                    <string>m_velocityDamping</string>
+                                    <string>m_accelerationGain</string>
+                                    <string>m_velocityGain</string>
+                                    <string>m_positionGain</string>
+                                    <string>m_positionMaxLinearVelocity</string>
+                                    <string>m_positionMaxAngularVelocity</string>
+                                    <string>m_snapGain</string>
+                                    <string>m_snapMaxLinearVelocity</string>
+                                    <string>m_snapMaxAngularVelocity</string>
+                                    <string>m_snapMaxLinearDistance</string>
+                                    <string>m_snapMaxAngularDistance</string>
+                                </Names>
+                                <Values>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Hierarchy Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Velocity Damping:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Acc Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Velocity Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Position Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Max Linear Vel:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Max Angular Vel:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Snap Gain:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Snap Max Linear Vel:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Snap Max Angular Vel:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Snap Max Linear Dist:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                                        <MangledTargetNames>
+                                            <string>__local__:HavokTools.hkFloatVariable:Defend Snap Max Angular Dist:ParentNodes</string>
+                                        </MangledTargetNames>
+                                    </anyType>
+                                </Values>
+                            </anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_boneIndices</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="ArrayOfAnyType" />
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkRefMakerOfhkFloatVariable">
+                        <MangledTargetNames>
+                            <string>__local__:HavokTools.hkFloatVariable:Defend Blend Fraction:ParentNodes</string>
+                        </MangledTargetNames>
+                    </anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Hierarchy Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Hierarchy Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Hierarchy Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.0099999997764825821</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Velocity Damping" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Velocity Damping:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Velocity Damping:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Velocity Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Velocity Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Velocity Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.34999999403953552</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Snap Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.25</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Snap Max Dist" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Dist:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="CharacterControllerModifier" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Controller Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_initialVelocity</string>
+                    <string>m_initialVelocityCoordinates</string>
+                    <string>m_motionMode</string>
+                    <string>m_forceDownwardMomentum</string>
+                    <string>m_applyGravity</string>
+                    <string>m_setInitialVelocity</string>
+                    <string>m_isTouchingGround</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_verticalGain</string>
+                            <string>m_horizontalCatchUpGain</string>
+                            <string>m_maxVerticalSeparation</string>
+                            <string>m_maxHorizontalSeparation</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>x</string>
+                            <string>y</string>
+                            <string>z</string>
+                            <string>w</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="xsd:string">INITIAL_VELOCITY_IN_WORLD_COORDINATES</anyType>
+                    <anyType xsi:type="xsd:string">MOTION_MODE_FOLLOW_ANIMATION</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Defend00" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Defend00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Defend00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Defend_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Defend.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Defend" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Defend:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Defend:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>61.4908066</X>
+            <Y>445.2592</Y>
+            <TransitionsIn>
+                <MangledTargetNames />
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator03:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>10</StateID>
+            <StateProbability>1</StateProbability>
+            <W>100</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="Defend KeyframeBones" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:Defend KeyframeBones:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:Defend KeyframeBones:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Keyframe Bones Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_keyframeInfo</string>
+                    <string>m_keyframedBonesList</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="ArrayOfAnyType" />
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_boneIndices</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="ArrayOfAnyType">
+                                <anyType xsi:type="xsd:short">3</anyType>
+                                <anyType xsi:type="xsd:short">6</anyType>
+                            </anyType>
+                        </Values>
+                    </anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Position Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Position Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Position Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.34999999403953552</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Max Linear Vel" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Max Linear Vel:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Max Linear Vel:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>3</MaxValue>
+            <DefaultValue>1.3999999761581421</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Max Angular Vel" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Max Angular Vel:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Max Angular Vel:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>3</MaxValue>
+            <DefaultValue>1</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Acc Gain" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Acc Gain:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Acc Gain:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>3</MaxValue>
+            <DefaultValue>0.34999999403953552</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Snap Max Linear Vel" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Linear Vel:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Linear Vel:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.10000000149011612</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Snap Max Linear Dist" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Linear Dist:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Linear Dist:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.0099999997764825821</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Snap Max Angular Dist" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Angular Dist:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Angular Dist:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.0099999997764825821</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Snap Max Angular Vel" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Angular Vel:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Snap Max Angular Vel:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.10000000149011612</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFloatVariable" name="Defend Blend Fraction" priority="1">
+        <hkFloatVariable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Blend Fraction:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkFloatVariable:Defend Blend Fraction:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <VariableType>Float</VariableType>
+            <MinValue>0</MinValue>
+            <MaxValue>1</MaxValue>
+            <DefaultValue>0.40000000596046448</DefaultValue>
+            <Global>false</Global>
+        </hkFloatVariable>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_Rigidbody_Ragdoll.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+</HBT>

@@ -1,0 +1,329 @@
+﻿<!--HBT-->
+<HBT version="1.0" appversion="2013.25" namespace="_PhysicsTutorial_01_CharacterController_hkc_">
+    <HBT_ITEM type="HavokTools.hkCharacter" name="PhysicsTutorial_01_CharacterController.hkc" priority="1">
+        <hkCharacter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCharacter:PhysicsTutorial_01_CharacterController.hkc:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <BehaviorFile>
+                <MangledTargetNames>
+                    <string>_CharacterController_hkb_:HavokTools.hkRefFile:CharacterController.hkb:IncomingRefs</string>
+                </MangledTargetNames>
+            </BehaviorFile>
+            <StateMachine>
+                <MangledTargetNames>
+                    <string>_CharacterController_hkb_:HavokTools.hkStateMachine:StateMachine00:IncomingRefs</string>
+                </MangledTargetNames>
+            </StateMachine>
+            <Rig>
+                <MangledTargetNames>
+                    <string>_Grunt_Rig_2_hkt_:HavokTools.hkCharacterHKX:Grunt_Rig_2.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </Rig>
+            <Ragdoll>
+                <MangledTargetNames>
+                    <string>_CaptainRagdoll_hkt_:HavokTools.hkCharacterHKX:CaptainRagdoll.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </Ragdoll>
+            <DeformableSkins>
+                <MangledTargetNames>
+                    <string>_Grunt_Rig_2_hkt_:HavokTools.hkCharacterHKX:Grunt_Rig_2.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </DeformableSkins>
+            <RigidSkins>
+                <MangledTargetNames>
+                    <string>_Grunt_Rig_2_hkt_:HavokTools.hkCharacterHKX:Grunt_Rig_2.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </RigidSkins>
+            <SkeletonMappers>
+                <MangledTargetNames />
+            </SkeletonMappers>
+            <UseRigidSkin />
+            <UseDeformableSkin />
+            <UseSkeletonMapper />
+            <Sequence>
+                <MangledTargetNames />
+            </Sequence>
+            <UseSequence>false</UseSequence>
+            <Gamepad>
+                <MangledTargetNames />
+            </Gamepad>
+            <UseGamepad>false</UseGamepad>
+            <InitialX>5</InitialX>
+            <InitialY>-8</InitialY>
+            <InitialZ>4</InitialZ>
+            <UniformCharacterScale>1</UniformCharacterScale>
+            <InitialRotation>175</InitialRotation>
+            <SavedSettingsNames>
+                <string>Default</string>
+            </SavedSettingsNames>
+            <SavedSettingsValues>
+                <ArrayOfFloat>
+                    <float>5</float>
+                    <float>-8</float>
+                    <float>4</float>
+                    <float>180</float>
+                    <float>1</float>
+                </ArrayOfFloat>
+            </SavedSettingsValues>
+            <SavedLODNames />
+            <SavedLODValues />
+            <CurrentLODName>Default (All Bones)</CurrentLODName>
+            <MirrorPartitionPairMap />
+            <MirrorBonePairMap />
+            <MirrorAxis />
+            <MirroredStringList1 />
+            <MirroredStringList2 />
+            <CharacterPropertyOverrides />
+            <LuaScriptOnCharacterActivated />
+            <LuaScriptOnCharacterDeactivated />
+            <LuaFilesChecked />
+            <Skins>
+                <FileNameMeshNamePair>
+                    <m_meshName>Skin 0</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\Grunt_Rig_2.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Skin 1</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\Grunt_Rig_2.hkt</m_fileName>
+                </FileNameMeshNamePair>
+            </Skins>
+            <BoneAttachments>
+                <FileNameMeshNamePair>
+                    <m_meshName>Orc_OrcTeethUpper</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\Grunt_Rig_2.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Orc_OrcLeftEye</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\Grunt_Rig_2.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Orc_OrcRightEye</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\Grunt_Rig_2.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Orc_OrcTeethLower</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\Grunt_Rig_2.hkt</m_fileName>
+                </FileNameMeshNamePair>
+            </BoneAttachments>
+            <BoneAttachmentBoneIndices>
+                <short>16</short>
+                <short>17</short>
+                <short>20</short>
+                <short>24</short>
+            </BoneAttachmentBoneIndices>
+            <BoneAttachmentTransforms>
+                <hkMatrix4Proxy>
+                    <m_col3>
+                        <w>1</w>
+                        <z>-0.000227050783</z>
+                        <y>0.154447332</y>
+                        <x>-0.0118807983</x>
+                    </m_col3>
+                    <m_col2>
+                        <w>0</w>
+                        <z>0.0200605169</z>
+                        <y>-0.0406860858</y>
+                        <x>0.5982822</x>
+                    </m_col2>
+                    <m_col1>
+                        <w>0</w>
+                        <z>-0.06153838</z>
+                        <y>-0.5955969</y>
+                        <x>-0.038439963</x>
+                    </m_col1>
+                    <m_col0>
+                        <w>0</w>
+                        <z>0.596499</z>
+                        <y>-0.0600773841</y>
+                        <x>-0.0240861364</x>
+                    </m_col0>
+                </hkMatrix4Proxy>
+                <hkMatrix4Proxy>
+                    <m_col3>
+                        <w>1</w>
+                        <z>6.10351549E-07</z>
+                        <y>1.90734859E-08</y>
+                        <x>7.62939436E-08</x>
+                    </m_col3>
+                    <m_col2>
+                        <w>0</w>
+                        <z>2.13178372</z>
+                        <y>-9.313226E-10</y>
+                        <x>-0.06428901</x>
+                    </m_col2>
+                    <m_col1>
+                        <w>0</w>
+                        <z>-0.06428553</z>
+                        <y>-0.02231439</y>
+                        <x>-2.131667</x>
+                    </m_col1>
+                    <m_col0>
+                        <w>0</w>
+                        <z>-0.000672635855</z>
+                        <y>2.13263631</y>
+                        <x>-0.0223042555</x>
+                    </m_col0>
+                </hkMatrix4Proxy>
+                <hkMatrix4Proxy>
+                    <m_col3>
+                        <w>1</w>
+                        <z>6.10351549E-07</z>
+                        <y>-1.90734859E-08</y>
+                        <x>0</x>
+                    </m_col3>
+                    <m_col2>
+                        <w>0</w>
+                        <z>2.08706164</z>
+                        <y>-4.38652933E-07</y>
+                        <x>-0.06293946</x>
+                    </m_col2>
+                    <m_col1>
+                        <w>0</w>
+                        <z>-0.06293596</z>
+                        <y>0.0226776879</y>
+                        <x>-2.08693719</x>
+                    </m_col1>
+                    <m_col0>
+                        <w>0</w>
+                        <z>0.000683990249</z>
+                        <y>2.08788514</y>
+                        <x>0.0226674341</x>
+                    </m_col0>
+                </hkMatrix4Proxy>
+                <hkMatrix4Proxy>
+                    <m_col3>
+                        <w>1</w>
+                        <z>0.00162078859</z>
+                        <y>0.151661977</y>
+                        <x>0.32552886</x>
+                    </m_col3>
+                    <m_col2>
+                        <w>0</w>
+                        <z>6.12810254E-07</z>
+                        <y>1.77951336</y>
+                        <x>-0.6523888</x>
+                    </m_col2>
+                    <m_col1>
+                        <w>0</w>
+                        <z>1.352746E-07</z>
+                        <y>-1.00192022</y>
+                        <x>-1.82268226</x>
+                    </m_col1>
+                    <m_col0>
+                        <w>0</w>
+                        <z>-2.27183914</z>
+                        <y>-2.15135515E-07</y>
+                        <x>5.578622E-07</x>
+                    </m_col0>
+                </hkMatrix4Proxy>
+            </BoneAttachmentTransforms>
+            <ProxyHeight>1.5</ProxyHeight>
+            <ProxyRadius>0.5</ProxyRadius>
+            <ProxyCollisionFilterInfo>1</ProxyCollisionFilterInfo>
+            <CustomCharacterControllerCinfo>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomCharacterControllerCinfo:CustomCharacterControllerCinfo01:IncomingRefs</string>
+                    <string>__local__:HavokTools.hkCustomCharacterControllerCinfo:CustomCharacterControllerCinfo00:IncomingRefs</string>
+                </MangledTargetNames>
+            </CustomCharacterControllerCinfo>
+            <FootIkEnabled>false</FootIkEnabled>
+            <FootIkDriverInfo>
+                <MangledTargetNames />
+            </FootIkDriverInfo>
+            <HandIkEnabled>false</HandIkEnabled>
+            <HandIkDriverInfo>
+                <MangledTargetNames />
+            </HandIkDriverInfo>
+            <AiControlEnabled>false</AiControlEnabled>
+            <AiControlDriverInfo>
+                <MangledTargetNames />
+            </AiControlDriverInfo>
+            <NumLODBones>73</NumLODBones>
+        </hkCharacter>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomCharacterControllerCinfo" name="CustomCharacterControllerCinfo00" priority="50">
+        <hkCustomCharacterControllerCinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomCharacterControllerCinfo:CustomCharacterControllerCinfo00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Proxy Cinfo</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_dynamicFriction</string>
+                    <string>m_staticFriction</string>
+                    <string>m_keepContactTolerance</string>
+                    <string>m_keepDistance</string>
+                    <string>m_contactAngleSensitivity</string>
+                    <string>m_userPlanes</string>
+                    <string>m_maxCharacterSpeedForSolver</string>
+                    <string>m_characterStrength</string>
+                    <string>m_characterMass</string>
+                    <string>m_maxSlope</string>
+                    <string>m_penetrationRecoverySpeed</string>
+                    <string>m_maxCastIterations</string>
+                    <string>m_refreshManifoldInCheckSupport</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">1</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">0.1</anyType>
+                    <anyType xsi:type="xsd:float">0.05</anyType>
+                    <anyType xsi:type="xsd:float">10</anyType>
+                    <anyType xsi:type="xsd:unsignedInt">4</anyType>
+                    <anyType xsi:type="xsd:float">10</anyType>
+                    <anyType xsi:type="xsd:float">3.40282E+38</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">1.57079637</anyType>
+                    <anyType xsi:type="xsd:float">1</anyType>
+                    <anyType xsi:type="xsd:int">10</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomCharacterControllerCinfo>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomCharacterControllerCinfo" name="CustomCharacterControllerCinfo01" priority="50">
+        <hkCustomCharacterControllerCinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomCharacterControllerCinfo:CustomCharacterControllerCinfo01:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Rigid Body Cinfo</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_mass</string>
+                    <string>m_friction</string>
+                    <string>m_maxLinearVelocity</string>
+                    <string>m_allowedPenetrationDepth</string>
+                    <string>m_maxSlope</string>
+                    <string>m_maxForce</string>
+                    <string>m_unweldingHeightOffsetFactor</string>
+                    <string>m_maxSpeedForSimplexSolver</string>
+                    <string>m_supportDistance</string>
+                    <string>m_hardSupportDistance</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">100</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">20</anyType>
+                    <anyType xsi:type="xsd:float">-0.1</anyType>
+                    <anyType xsi:type="xsd:float">1.04719758</anyType>
+                    <anyType xsi:type="xsd:float">1000</anyType>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">10</anyType>
+                    <anyType xsi:type="xsd:float">0.1</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomCharacterControllerCinfo>
+    </HBT_ITEM>
+</HBT>

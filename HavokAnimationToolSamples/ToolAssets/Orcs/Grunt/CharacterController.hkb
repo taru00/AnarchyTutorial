@@ -1,0 +1,1591 @@
+﻿<!--HBT-->
+<HBT version="1.0" appversion="2013.25" namespace="_CharacterController_hkb_">
+    <HBT_ITEM type="HavokTools.hkStateMachine" name="StateMachine00" priority="1">
+        <hkStateMachine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkStateMachine:StateMachine00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <States>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Idle:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Jog00:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Walk00:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Jog:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Walk:ParentNodes</string>
+                </MangledTargetNames>
+            </States>
+            <Transitions>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Walk:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Jog:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Walk00:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Jog00:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:ParentNodes</string>
+                </MangledTargetNames>
+            </Transitions>
+            <StartState>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkState:Orc Grunt Club Idle:IncomingRefs</string>
+                </MangledTargetNames>
+            </StartState>
+            <StartStateSelectorVariable>
+                <MangledTargetNames />
+            </StartStateSelectorVariable>
+            <SyncVariable>
+                <MangledTargetNames />
+            </SyncVariable>
+            <UseRandomStartState>false</UseRandomStartState>
+            <StartStateChooser>
+                <MangledTargetNames />
+            </StartStateChooser>
+            <GoBackwardEvent>
+                <MangledTargetNames />
+            </GoBackwardEvent>
+            <RandomTransitionEvent>
+                <MangledTargetNames />
+            </RandomTransitionEvent>
+            <NextHigherStateEvent>
+                <MangledTargetNames />
+            </NextHigherStateEvent>
+            <NextLowerStateEvent>
+                <MangledTargetNames />
+            </NextLowerStateEvent>
+            <IsActiveVariable>
+                <MangledTargetNames />
+            </IsActiveVariable>
+            <CurrentStateIDVariable>
+                <MangledTargetNames />
+            </CurrentStateIDVariable>
+            <MaxSimultaneousTransitions>32</MaxSimultaneousTransitions>
+            <OffsetX>-8.253618</OffsetX>
+            <OffsetY>-72.21812</OffsetY>
+            <Zoom>0.9025072</Zoom>
+            <WrapAroundStateID>false</WrapAroundStateID>
+            <SelfTransitionMode>DontTransition</SelfTransitionMode>
+        </hkStateMachine>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkBehaviorFile:CharacterController.hkb:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Behavior15.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Idle" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Idle_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Idle.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Orc Grunt Club Idle" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>156.753067</X>
+            <Y>197.753067</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>1</StateID>
+            <StateProbability>1</StateProbability>
+            <W>132.557785</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="Orc Grunt Club Idle to Orc Grunt Club Walk" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:Orc Grunt Club Idle to Orc Grunt Club Walk:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="Orc Grunt Club Walk to Orc Grunt Club Jog" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:Orc Grunt Club Walk to Orc Grunt Club Jog:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="Orc Grunt Club Idle to Orc Grunt Club Walk00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:Orc Grunt Club Idle to Orc Grunt Club Walk00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="Orc Grunt Club Walk to Orc Grunt Club Jog00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:Orc Grunt Club Walk to Orc Grunt Club Jog00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Jog00" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Jog00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Jog00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Jog_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Jog.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Orc Grunt Club Walk00" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Walk00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Orc Grunt Club Walk00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Walk_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Walk.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Orc Grunt Club Jog00" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Jog00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Jog00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>48.32715</X>
+            <Y>393.175873</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Jog00:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator02:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>6</StateID>
+            <StateProbability>1</StateProbability>
+            <W>149.0531</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Orc Grunt Club Walk00" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Walk00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Walk00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>67.16354</X>
+            <Y>292.9969</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Walk00:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>7</StateID>
+            <StateProbability>1</StateProbability>
+            <W>158.10231</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="Orc Grunt Club Idle to Orc Grunt Club Walk0000" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:Orc Grunt Club Idle to Orc Grunt Club Walk0000:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="Orc Grunt Club Walk00 to Orc Grunt Club Jog00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:Orc Grunt Club Walk00 to Orc Grunt Club Jog00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="CharacterControllerModifier00" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Controller Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_initialVelocity</string>
+                    <string>m_initialVelocityCoordinates</string>
+                    <string>m_motionMode</string>
+                    <string>m_forceDownwardMomentum</string>
+                    <string>m_applyGravity</string>
+                    <string>m_setInitialVelocity</string>
+                    <string>m_isTouchingGround</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_verticalGain</string>
+                            <string>m_horizontalCatchUpGain</string>
+                            <string>m_maxVerticalSeparation</string>
+                            <string>m_maxHorizontalSeparation</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>x</string>
+                            <string>y</string>
+                            <string>z</string>
+                            <string>w</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="xsd:string">INITIAL_VELOCITY_IN_WORLD_COORDINATES</anyType>
+                    <anyType xsi:type="xsd:string">MOTION_MODE_FOLLOW_ANIMATION</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator00" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Walk00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator01" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Idle:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator02" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator02:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator02:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Jog00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkBehaviorFile" name="Grunt_CharacterController.hkb" priority="1">
+        <hkBehaviorFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs />
+            <ParentNodes />
+            <Notes />
+        </hkBehaviorFile>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Jog" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Jog:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Jog:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Jog_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Jog.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Walk" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Walk:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Walk:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Walk_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Walk.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_LOOPING</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Jog" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Jog:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Jog:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>284.151733</X>
+            <Y>391.329163</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Jog:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Jog:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>8</StateID>
+            <StateProbability>1</StateProbability>
+            <W>100</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Walk" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Walk:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Walk:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>293.0159</X>
+            <Y>286.718079</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Walk:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Walk:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>9</StateID>
+            <StateProbability>1</StateProbability>
+            <W>100</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Walk" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Walk:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Walk:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Walk" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Walk:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Walk:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Walk:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Walk:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomTransitionEffect" name="DefaultBlendingTransitionEffect" priority="50">
+        <hkCustomTransitionEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Blending Transition Effect</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_duration</string>
+                    <string>m_toGeneratorStartTimeFraction</string>
+                    <string>m_flags</string>
+                    <string>m_selfTransitionMode</string>
+                    <string>m_eventMode</string>
+                    <string>m_endMode</string>
+                    <string>m_blendCurve</string>
+                    <string>m_alignmentBone</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:string">FLAG_NONE</anyType>
+                    <anyType xsi:type="xsd:string">SELF_TRANSITION_MODE_CONTINUE_IF_CYCLIC_BLEND_IF_ACYCLIC</anyType>
+                    <anyType xsi:type="xsd:string">EVENT_MODE_DEFAULT</anyType>
+                    <anyType xsi:type="xsd:string">END_MODE_NONE</anyType>
+                    <anyType xsi:type="xsd:string">BLEND_CURVE_SMOOTH</anyType>
+                    <anyType xsi:type="xsd:short">-1</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomTransitionEffect>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Jog" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Jog:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Jog:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Jog" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Jog:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Jog:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Jog:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Jog:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Orc Grunt Club Walk00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Walk00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Walk00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Orc Grunt Club Walk00" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Walk00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Walk00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Walk00:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Orc Grunt Club Walk00:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Orc Grunt Club Jog00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Jog00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Jog00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Orc Grunt Club Jog00" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Jog00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Jog00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Jog00:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Orc Grunt Club Jog00:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Orc Grunt Club Idle" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Orc Grunt Club Idle" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:DefaultBlendingTransitionEffect:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Orc Grunt Club Idle:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+</HBT>

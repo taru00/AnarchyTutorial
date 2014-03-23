@@ -1,0 +1,486 @@
+﻿<!--HBT-->
+<HBT version="1.0" appversion="2013.25" namespace="_Grunt_Player_hkc_">
+    <HBT_ITEM type="HavokTools.hkCharacter" name="Grunt_Player.hkc" priority="1">
+        <hkCharacter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCharacter:Grunt_Player.hkc:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <BehaviorFile>
+                <MangledTargetNames>
+                    <string>_Grunt_Player_hkb_:HavokTools.hkRefFile:Grunt_Player.hkb:IncomingRefs</string>
+                </MangledTargetNames>
+            </BehaviorFile>
+            <StateMachine>
+                <MangledTargetNames>
+                    <string>_Grunt_Player_hkb_:HavokTools.hkStateMachine:Main State Machine:IncomingRefs</string>
+                </MangledTargetNames>
+            </StateMachine>
+            <Rig>
+                <MangledTargetNames>
+                    <string>_GruntRig_LocalFrame_hkt_:HavokTools.hkCharacterHKX:GruntRig_LocalFrame.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </Rig>
+            <Ragdoll>
+                <MangledTargetNames>
+                    <string>_CaptainRagdoll_hkt_:HavokTools.hkCharacterHKX:CaptainRagdoll.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </Ragdoll>
+            <DeformableSkins>
+                <MangledTargetNames>
+                    <string>_GruntRig_LocalFrame_hkt_:HavokTools.hkCharacterHKX:GruntRig_LocalFrame.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </DeformableSkins>
+            <RigidSkins>
+                <MangledTargetNames>
+                    <string>_GruntRig_LocalFrame_hkt_:HavokTools.hkCharacterHKX:GruntRig_LocalFrame.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </RigidSkins>
+            <SkeletonMappers>
+                <MangledTargetNames />
+            </SkeletonMappers>
+            <UseRigidSkin />
+            <UseDeformableSkin />
+            <UseSkeletonMapper />
+            <Sequence>
+                <MangledTargetNames />
+            </Sequence>
+            <UseSequence>false</UseSequence>
+            <Gamepad>
+                <MangledTargetNames>
+                    <string>_Grunt_Player_hkb_:HavokTools.hkGamepadConfig:GamepadConfig00:IncomingRefs</string>
+                </MangledTargetNames>
+            </Gamepad>
+            <UseGamepad>true</UseGamepad>
+            <InitialX>5</InitialX>
+            <InitialY>-9.5</InitialY>
+            <InitialZ>3.5</InitialZ>
+            <UniformCharacterScale>1</UniformCharacterScale>
+            <InitialRotation>180</InitialRotation>
+            <SavedSettingsNames>
+                <string>Default</string>
+            </SavedSettingsNames>
+            <SavedSettingsValues>
+                <ArrayOfFloat>
+                    <float>5</float>
+                    <float>-9.5</float>
+                    <float>3.5</float>
+                    <float>180</float>
+                    <float>1</float>
+                </ArrayOfFloat>
+            </SavedSettingsValues>
+            <SavedLODNames />
+            <SavedLODValues />
+            <CurrentLODName>Default (All Bones)</CurrentLODName>
+            <MirrorPartitionPairMap />
+            <MirrorBonePairMap>
+                <short>0</short>
+                <short>1</short>
+                <short>2</short>
+                <short>3</short>
+                <short>4</short>
+                <short>5</short>
+                <short>6</short>
+                <short>7</short>
+                <short>8</short>
+                <short>9</short>
+                <short>10</short>
+                <short>11</short>
+                <short>12</short>
+                <short>13</short>
+                <short>14</short>
+                <short>15</short>
+                <short>16</short>
+                <short>17</short>
+                <short>18</short>
+                <short>19</short>
+                <short>20</short>
+                <short>21</short>
+                <short>22</short>
+                <short>23</short>
+                <short>24</short>
+                <short>25</short>
+                <short>26</short>
+                <short>27</short>
+                <short>28</short>
+                <short>29</short>
+                <short>30</short>
+                <short>31</short>
+                <short>32</short>
+                <short>33</short>
+                <short>34</short>
+                <short>35</short>
+                <short>36</short>
+                <short>37</short>
+                <short>38</short>
+                <short>39</short>
+                <short>40</short>
+                <short>41</short>
+                <short>42</short>
+                <short>43</short>
+                <short>44</short>
+                <short>45</short>
+                <short>46</short>
+                <short>47</short>
+                <short>48</short>
+                <short>49</short>
+                <short>50</short>
+                <short>51</short>
+                <short>52</short>
+                <short>53</short>
+                <short>54</short>
+                <short>55</short>
+                <short>56</short>
+                <short>57</short>
+                <short>58</short>
+                <short>59</short>
+                <short>60</short>
+                <short>61</short>
+                <short>62</short>
+                <short>63</short>
+                <short>64</short>
+                <short>65</short>
+                <short>66</short>
+                <short>67</short>
+                <short>68</short>
+                <short>69</short>
+                <short>70</short>
+                <short>71</short>
+                <short>72</short>
+            </MirrorBonePairMap>
+            <MirrorAxis>
+                <float>1</float>
+                <float>0</float>
+                <float>0</float>
+            </MirrorAxis>
+            <MirroredStringList1 />
+            <MirroredStringList2 />
+            <CharacterPropertyOverrides>
+                <hkCharacterPropertyOverride>
+                    <Name>SwordLayer</Name>
+                    <TheProp>
+                        <PropType>BoneWeightArray</PropType>
+                        <PropVal xsi:type="hkFloatArrayWrapper">
+                            <Values />
+                        </PropVal>
+                    </TheProp>
+                    <Touched>false</Touched>
+                </hkCharacterPropertyOverride>
+            </CharacterPropertyOverrides>
+            <LuaScriptOnCharacterActivated />
+            <LuaScriptOnCharacterDeactivated />
+            <LuaFilesChecked>
+                <string>grunt_gamepad .lua</string>
+                <string>grunt_camera.lua</string>
+                <string>grunt_locomotion.lua</string>
+                <string>grunt_main.lua</string>
+                <string>grunt_attack.lua</string>
+            </LuaFilesChecked>
+            <Skins>
+                <FileNameMeshNamePair>
+                    <m_meshName>Orc_body</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\GruntRig_LocalFrame.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>OrcGruntLeatherArmour</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\GruntRig_LocalFrame.hkt</m_fileName>
+                </FileNameMeshNamePair>
+            </Skins>
+            <BoneAttachments>
+                <FileNameMeshNamePair>
+                    <m_meshName>GruntAxeBack</m_meshName>
+                    <m_fileName>..\..\GameAssets\Orcs\Grunt\CharacterAssets\GruntRig_LocalFrame.hkt</m_fileName>
+                </FileNameMeshNamePair>
+            </BoneAttachments>
+            <BoneAttachmentBoneIndices>
+                <short>14</short>
+            </BoneAttachmentBoneIndices>
+            <BoneAttachmentTransforms>
+                <hkMatrix4Proxy>
+                    <m_col3>
+                        <w>1</w>
+                        <z>0.0569172874</z>
+                        <y>-0.151513115</y>
+                        <x>0.207581908</x>
+                    </m_col3>
+                    <m_col2>
+                        <w>0</w>
+                        <z>0.440399349</z>
+                        <y>-0.0914869756</y>
+                        <x>-0.893128455</x>
+                    </m_col2>
+                    <m_col1>
+                        <w>0</w>
+                        <z>0.8749634</z>
+                        <y>0.26668793</y>
+                        <x>0.40412432</x>
+                    </m_col1>
+                    <m_col0>
+                        <w>0</w>
+                        <z>0.201214477</z>
+                        <y>-0.959431</y>
+                        <x>0.19749698</x>
+                    </m_col0>
+                </hkMatrix4Proxy>
+            </BoneAttachmentTransforms>
+            <ProxyHeight>1.55</ProxyHeight>
+            <ProxyRadius>0.45</ProxyRadius>
+            <ProxyCollisionFilterInfo>1</ProxyCollisionFilterInfo>
+            <CustomCharacterControllerCinfo>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomCharacterControllerCinfo:CustomCharacterControllerCinfo00:IncomingRefs</string>
+                    <string>__local__:HavokTools.hkCustomCharacterControllerCinfo:Unknown:IncomingRefs</string>
+                </MangledTargetNames>
+            </CustomCharacterControllerCinfo>
+            <FootIkEnabled>true</FootIkEnabled>
+            <FootIkDriverInfo>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkFootIkDriverInfo:Unknown:IncomingRefs</string>
+                </MangledTargetNames>
+            </FootIkDriverInfo>
+            <HandIkEnabled>false</HandIkEnabled>
+            <HandIkDriverInfo>
+                <MangledTargetNames />
+            </HandIkDriverInfo>
+            <AiControlEnabled>false</AiControlEnabled>
+            <AiControlDriverInfo>
+                <MangledTargetNames />
+            </AiControlDriverInfo>
+            <NumLODBones>73</NumLODBones>
+        </hkCharacter>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomCharacterControllerCinfo" name="Unknown" priority="50">
+        <hkCustomCharacterControllerCinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomCharacterControllerCinfo:Unknown:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Rigid Body Cinfo</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_mass</string>
+                    <string>m_friction</string>
+                    <string>m_maxLinearVelocity</string>
+                    <string>m_allowedPenetrationDepth</string>
+                    <string>m_maxSlope</string>
+                    <string>m_maxForce</string>
+                    <string>m_unweldingHeightOffsetFactor</string>
+                    <string>m_maxSpeedForSimplexSolver</string>
+                    <string>m_supportDistance</string>
+                    <string>m_hardSupportDistance</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">100</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">20</anyType>
+                    <anyType xsi:type="xsd:float">-0.1</anyType>
+                    <anyType xsi:type="xsd:float">1.04719758</anyType>
+                    <anyType xsi:type="xsd:float">1000</anyType>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">10</anyType>
+                    <anyType xsi:type="xsd:float">0.1</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomCharacterControllerCinfo>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkFootIkDriverInfo" name="Unknown" priority="50">
+        <hkFootIkDriverInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkFootIkDriverInfo:Unknown:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Foot IK Driver Info</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_legs</string>
+                    <string>m_raycastDistanceUp</string>
+                    <string>m_raycastDistanceDown</string>
+                    <string>m_originalGroundHeightMS</string>
+                    <string>m_verticalOffset</string>
+                    <string>m_collisionFilterInfo</string>
+                    <string>m_forwardAlignFraction</string>
+                    <string>m_sidewaysAlignFraction</string>
+                    <string>m_sidewaysSampleWidth</string>
+                    <string>m_lockFeetWhenPlanted</string>
+                    <string>m_useCharacterUpVector</string>
+                    <string>m_isQuadrupedNarrow</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="ArrayOfAnyType">
+                        <anyType xsi:type="hkCustomParameterList">
+                            <Names>
+                                <string>m_kneeAxisLS</string>
+                                <string>m_footEndLS</string>
+                                <string>m_footPlantedAnkleHeightMS</string>
+                                <string>m_footRaisedAnkleHeightMS</string>
+                                <string>m_maxAnkleHeightMS</string>
+                                <string>m_minAnkleHeightMS</string>
+                                <string>m_maxKneeAngleDegrees</string>
+                                <string>m_minKneeAngleDegrees</string>
+                                <string>m_hipIndex</string>
+                                <string>m_kneeIndex</string>
+                                <string>m_ankleIndex</string>
+                            </Names>
+                            <Values>
+                                <anyType xsi:type="hkCustomParameterList">
+                                    <Names>
+                                        <string>x</string>
+                                        <string>y</string>
+                                        <string>z</string>
+                                        <string>w</string>
+                                    </Names>
+                                    <Values>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">1</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                    </Values>
+                                </anyType>
+                                <anyType xsi:type="hkCustomParameterList">
+                                    <Names>
+                                        <string>x</string>
+                                        <string>y</string>
+                                        <string>z</string>
+                                        <string>w</string>
+                                    </Names>
+                                    <Values>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                    </Values>
+                                </anyType>
+                                <anyType xsi:type="xsd:float">0</anyType>
+                                <anyType xsi:type="xsd:float">0.5</anyType>
+                                <anyType xsi:type="xsd:float">0.7</anyType>
+                                <anyType xsi:type="xsd:float">-0.1</anyType>
+                                <anyType xsi:type="xsd:float">180</anyType>
+                                <anyType xsi:type="xsd:float">0</anyType>
+                                <anyType xsi:type="xsd:short">8</anyType>
+                                <anyType xsi:type="xsd:short">9</anyType>
+                                <anyType xsi:type="xsd:short">10</anyType>
+                            </Values>
+                        </anyType>
+                        <anyType xsi:type="hkCustomParameterList">
+                            <Names>
+                                <string>m_kneeAxisLS</string>
+                                <string>m_footEndLS</string>
+                                <string>m_footPlantedAnkleHeightMS</string>
+                                <string>m_footRaisedAnkleHeightMS</string>
+                                <string>m_maxAnkleHeightMS</string>
+                                <string>m_minAnkleHeightMS</string>
+                                <string>m_maxKneeAngleDegrees</string>
+                                <string>m_minKneeAngleDegrees</string>
+                                <string>m_hipIndex</string>
+                                <string>m_kneeIndex</string>
+                                <string>m_ankleIndex</string>
+                            </Names>
+                            <Values>
+                                <anyType xsi:type="hkCustomParameterList">
+                                    <Names>
+                                        <string>x</string>
+                                        <string>y</string>
+                                        <string>z</string>
+                                        <string>w</string>
+                                    </Names>
+                                    <Values>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">1</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                    </Values>
+                                </anyType>
+                                <anyType xsi:type="hkCustomParameterList">
+                                    <Names>
+                                        <string>x</string>
+                                        <string>y</string>
+                                        <string>z</string>
+                                        <string>w</string>
+                                    </Names>
+                                    <Values>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                        <anyType xsi:type="xsd:float">0</anyType>
+                                    </Values>
+                                </anyType>
+                                <anyType xsi:type="xsd:float">0</anyType>
+                                <anyType xsi:type="xsd:float">0.5</anyType>
+                                <anyType xsi:type="xsd:float">0.7</anyType>
+                                <anyType xsi:type="xsd:float">-0.1</anyType>
+                                <anyType xsi:type="xsd:float">180</anyType>
+                                <anyType xsi:type="xsd:float">0</anyType>
+                                <anyType xsi:type="xsd:short">4</anyType>
+                                <anyType xsi:type="xsd:short">5</anyType>
+                                <anyType xsi:type="xsd:short">6</anyType>
+                            </Values>
+                        </anyType>
+                    </anyType>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">0.8</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:unsignedInt">3</anyType>
+                    <anyType xsi:type="xsd:float">1</anyType>
+                    <anyType xsi:type="xsd:float">1</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                </Values>
+            </ParameterList>
+        </hkFootIkDriverInfo>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomCharacterControllerCinfo" name="CustomCharacterControllerCinfo00" priority="50">
+        <hkCustomCharacterControllerCinfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomCharacterControllerCinfo:CustomCharacterControllerCinfo00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Proxy Cinfo</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_dynamicFriction</string>
+                    <string>m_staticFriction</string>
+                    <string>m_keepContactTolerance</string>
+                    <string>m_keepDistance</string>
+                    <string>m_contactAngleSensitivity</string>
+                    <string>m_userPlanes</string>
+                    <string>m_maxCharacterSpeedForSolver</string>
+                    <string>m_characterStrength</string>
+                    <string>m_characterMass</string>
+                    <string>m_maxSlope</string>
+                    <string>m_penetrationRecoverySpeed</string>
+                    <string>m_maxCastIterations</string>
+                    <string>m_refreshManifoldInCheckSupport</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">1</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">0.1</anyType>
+                    <anyType xsi:type="xsd:float">0.05</anyType>
+                    <anyType xsi:type="xsd:float">10</anyType>
+                    <anyType xsi:type="xsd:unsignedInt">4</anyType>
+                    <anyType xsi:type="xsd:float">10</anyType>
+                    <anyType xsi:type="xsd:float">3.40282E+38</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:float">1.57079637</anyType>
+                    <anyType xsi:type="xsd:float">1</anyType>
+                    <anyType xsi:type="xsd:int">10</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomCharacterControllerCinfo>
+    </HBT_ITEM>
+</HBT>
