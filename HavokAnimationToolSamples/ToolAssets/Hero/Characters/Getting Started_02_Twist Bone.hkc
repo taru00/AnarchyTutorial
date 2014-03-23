@@ -1,0 +1,173 @@
+﻿<!--HBT-->
+<HBT version="1.0" appversion="2013.2" namespace="_Getting Started_02_Twist Bone_hkc_">
+    <HBT_ITEM type="HavokTools.hkCharacter" name="Getting Started_02_Twist Bone.hkc" priority="1">
+        <hkCharacter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCharacter:Getting Started_02_Twist Bone.hkc:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <BehaviorFile>
+                <MangledTargetNames>
+                    <string>_Twist Bone_hkb_:HavokTools.hkRefFile:Twist Bone.hkb:IncomingRefs</string>
+                </MangledTargetNames>
+            </BehaviorFile>
+            <StateMachine>
+                <MangledTargetNames>
+                    <string>_Twist Bone_hkb_:HavokTools.hkStateMachine:StateMachine00:IncomingRefs</string>
+                </MangledTargetNames>
+            </StateMachine>
+            <Rig>
+                <MangledTargetNames>
+                    <string>_Rig_hkt_:HavokTools.hkCharacterHKX:Rig.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </Rig>
+            <Ragdoll>
+                <MangledTargetNames />
+            </Ragdoll>
+            <DeformableSkins>
+                <MangledTargetNames>
+                    <string>_Rig_hkt_:HavokTools.hkCharacterHKX:Rig.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </DeformableSkins>
+            <RigidSkins>
+                <MangledTargetNames>
+                    <string>_Rig_hkt_:HavokTools.hkCharacterHKX:Rig.hkt:IncomingRefs</string>
+                </MangledTargetNames>
+            </RigidSkins>
+            <SkeletonMappers>
+                <MangledTargetNames />
+            </SkeletonMappers>
+            <UseRigidSkin />
+            <UseDeformableSkin />
+            <UseSkeletonMapper />
+            <Sequence>
+                <MangledTargetNames />
+            </Sequence>
+            <UseSequence>false</UseSequence>
+            <Gamepad>
+                <MangledTargetNames>
+                    <string>_Twist Bone_hkb_:HavokTools.hkGamepadConfig:GamepadConfig00:IncomingRefs</string>
+                </MangledTargetNames>
+            </Gamepad>
+            <UseGamepad>true</UseGamepad>
+            <InitialX>0</InitialX>
+            <InitialY>0</InitialY>
+            <InitialZ>0</InitialZ>
+            <UniformCharacterScale>1</UniformCharacterScale>
+            <InitialRotation>0</InitialRotation>
+            <SavedSettingsNames>
+                <string>Default</string>
+            </SavedSettingsNames>
+            <SavedSettingsValues>
+                <ArrayOfFloat>
+                    <float>0</float>
+                    <float>0</float>
+                    <float>0</float>
+                    <float>0</float>
+                    <float>1</float>
+                </ArrayOfFloat>
+            </SavedSettingsValues>
+            <SavedLODNames />
+            <SavedLODValues />
+            <CurrentLODName>Default (All Bones)</CurrentLODName>
+            <MirrorPartitionPairMap />
+            <MirrorBonePairMap />
+            <MirrorAxis />
+            <MirroredStringList1 />
+            <MirroredStringList2 />
+            <CharacterPropertyOverrides />
+            <LuaScriptOnCharacterActivated />
+            <LuaScriptOnCharacterDeactivated />
+            <LuaFilesChecked>
+                <string>tutorial_locomotion.lua</string>
+                <string>tutorial_camera.lua</string>
+                <string>tutorial_climbing.lua</string>
+                <string>tutorial_takingCover.lua</string>
+                <string>tutorial_vaulting.lua</string>
+            </LuaFilesChecked>
+            <Skins>
+                <FileNameMeshNamePair>
+                    <m_meshName>Hands</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Head_Mesh</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Body</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>DaggerSheath_Right</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Eye_Right</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+                <FileNameMeshNamePair>
+                    <m_meshName>Eye_Left</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+            </Skins>
+            <BoneAttachments>
+                <FileNameMeshNamePair>
+                    <m_meshName>Broadsword</m_meshName>
+                    <m_fileName>..\..\GameAssets\Hero\CharacterAssets\Rig.hkt</m_fileName>
+                </FileNameMeshNamePair>
+            </BoneAttachments>
+            <BoneAttachmentBoneIndices>
+                <short>22</short>
+            </BoneAttachmentBoneIndices>
+            <BoneAttachmentTransforms>
+                <hkMatrix4Proxy>
+                    <m_col3>
+                        <w>1</w>
+                        <z>-0.15792121</z>
+                        <y>-0.0243652537</y>
+                        <x>0.118692927</x>
+                    </m_col3>
+                    <m_col2>
+                        <w>0</w>
+                        <z>-0.541808963</z>
+                        <y>0.229198337</y>
+                        <x>0.8086476</x>
+                    </m_col2>
+                    <m_col1>
+                        <w>0</w>
+                        <z>-0.0292864982</z>
+                        <y>0.9563689</y>
+                        <x>-0.290690124</x>
+                    </m_col1>
+                    <m_col0>
+                        <w>0</w>
+                        <z>-0.8399913</z>
+                        <y>-0.181181177</y>
+                        <x>-0.5114573</x>
+                    </m_col0>
+                </hkMatrix4Proxy>
+            </BoneAttachmentTransforms>
+            <ProxyHeight>1.7</ProxyHeight>
+            <ProxyRadius>0.4</ProxyRadius>
+            <ProxyCollisionFilterInfo>1</ProxyCollisionFilterInfo>
+            <CustomCharacterControllerCinfo>
+                <MangledTargetNames />
+            </CustomCharacterControllerCinfo>
+            <FootIkEnabled>false</FootIkEnabled>
+            <FootIkDriverInfo>
+                <MangledTargetNames />
+            </FootIkDriverInfo>
+            <HandIkEnabled>false</HandIkEnabled>
+            <HandIkDriverInfo>
+                <MangledTargetNames />
+            </HandIkDriverInfo>
+            <AiControlEnabled>false</AiControlEnabled>
+            <AiControlDriverInfo>
+                <MangledTargetNames />
+            </AiControlDriverInfo>
+            <NumLODBones>85</NumLODBones>
+        </hkCharacter>
+    </HBT_ITEM>
+</HBT>
