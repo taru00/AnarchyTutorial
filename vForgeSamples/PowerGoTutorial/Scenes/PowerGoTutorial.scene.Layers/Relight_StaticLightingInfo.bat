@@ -1,0 +1,1 @@
+vLux.exe "" -project "D:\GDrive\AnarchyBook\vForgeSamples\PowerGoTutorial" -tempfolder "D:\GDrive\AnarchyBook\vForgeSamples\PowerGoTutorial\Scenes\PowerGoTutorial.scene.Layers" -out "Scenes\PowerGoTutorial" -quiet -minimized -config "D:\GDrive\AnarchyBook\vForgeSamples\PowerGoTutorial\Scenes\PowerGoTutorial.scene.Layers\lighting.cfg"

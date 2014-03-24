@@ -1,0 +1,7 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="goboard" userflags="0" diffuse="Textures\WoodGoBoard.tga" Lighting="LightGrid" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" specmul="0" specexp="1" parallaxscale="-0.03" parallaxbias="-0.015" ambient="255,255,255,255" sortingkey="0" alphathreshold="0.25" lightmapsize="128,128" lightmapgran="0" lightmapID="-1">
+            <Shader library="\Shaders\MobileShaders.ShaderLib" effect="Diffuse" paramstring="CullMode=back;DepthWrite=true;MaterialParams=0,1,-0.03,-0.015;AlphaThreshold=0.25;MaterialAmbient=1,1,1;VertexLighting=False;DynamicLightNormalMapping=False;" />
+        </Material>
+    </Materials>
+</root>
