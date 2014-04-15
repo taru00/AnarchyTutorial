@@ -1,0 +1,12 @@
+<root>
+    <Resources Version="1" Count="8" PathType="Project">
+        <Resource Manager="Textures" Filename="Atten\smooth.dds" CustomInt="1,1" Size="1024" />
+        <Resource Manager="FILE" Filename="Models/DoorWall.model_data\materials.xml" OwnerRes="6" Size="569" />
+        <Resource Manager="Textures" Filename="Models\Textures\paintedwall.dds" CustomInt="1,64" Size="699064" />
+        <Resource Manager="Textures" Filename="Models\Textures\paintedwall_normalmap.dds" CustomInt="1,0" Size="699064" />
+        <Resource Manager="Textures" Filename="Models\Textures\paintedwall_specular.dds" CustomInt="1,0" Size="699064" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="63088" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/DoorWall.model" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="392352" />
+    </Resources>
+</root>

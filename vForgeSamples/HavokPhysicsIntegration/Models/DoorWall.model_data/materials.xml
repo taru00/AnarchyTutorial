@@ -1,0 +1,5 @@
+<root>
+    <Materials>
+        <Material name="PaintedWall" diffuse="Textures\paintedwall.dds" normalmap="Textures\paintedwall_normalmap.dds" specularmap="Textures\paintedwall_specular.dds" ambient="255,255,255,0" specmul="0.800000" specexp="7.999999" parallaxscale="-0.030000" parallaxbias="-0.015000" lightmapsize="512,512" lightmapID="0" userstring="" userflags="0" sortingkey="0" alphathreshold="-1" doublesided="FALSE" staticshadows="TRUE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" Lighting="LightGrid" deferredID="0" pass="Auto" transparency="opaque" overridemateriallib="" overridematerialname="" />
+    </Materials>
+</root>

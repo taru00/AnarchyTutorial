@@ -4,3 +4,5 @@
 *.ini
 *.user
 *.Zone
+*.deleted
+*.assetlib

@@ -1,0 +1,11 @@
+<root>
+    <Resources Version="1" Count="7" PathType="Project">
+        <Resource Manager="FILE" Filename="Meshes/Temple_Stairs_01.vmesh_data\materials.xml" OwnerRes="5" Size="1295" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="63088" />
+        <Resource Manager="Textures" Filename="meshes\Textures\Temple_Stairs_01_d.tga" CustomInt="1,64" Size="1398100" />
+        <Resource Manager="Textures" Filename="meshes\Textures\Temple_Trim_01_d.tga" CustomInt="1,64" Size="1398100" />
+        <Resource Manager="Textures" Filename="meshes\Textures\Temple_Wall_01_d.tga" CustomInt="1,64" Size="1398100" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Meshes/Temple_Stairs_01.vmesh" CustomInt="1,1" Size="168" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+    </Resources>
+</root>

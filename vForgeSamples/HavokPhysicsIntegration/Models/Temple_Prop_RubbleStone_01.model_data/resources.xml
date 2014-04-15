@@ -1,0 +1,9 @@
+<root>
+    <Resources Version="1" Count="5" PathType="Project">
+        <Resource Manager="FILE" Filename="Models/Temple_Prop_RubbleStone_01.model_data\materials.xml" OwnerRes="3" Size="491" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="63088" />
+        <Resource Manager="Textures" Filename="models\Textures\Temple_Prop_Rubble_01_D.tga" CustomInt="1,64" Size="1398100" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/Temple_Prop_RubbleStone_01.model" CustomInt="1,2" Size="56" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3540544" />
+    </Resources>
+</root>

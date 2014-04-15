@@ -1,0 +1,15 @@
+<root>
+    <Resources Version="1" Count="11" PathType="Project">
+        <Resource Manager="Textures" Filename="Atten\smooth.dds" CustomInt="1,1" Size="1024" />
+        <Resource Manager="FILE" Filename="Models/Door.model_data\materials.xml" OwnerRes="9" Size="2225" />
+        <Resource Manager="Textures" Filename="Models\Textures\buzzSawGlass.dds" CustomInt="1,64" Size="1398120" />
+        <Resource Manager="Textures" Filename="Models\Textures\buzzSawGlass_normalmap.dds" CustomInt="1,0" Size="1398120" />
+        <Resource Manager="Textures" Filename="Models\Textures\buzzSawGlass_specularmap.dds" CustomInt="1,0" Size="1398120" />
+        <Resource Manager="Textures" Filename="Models\Textures\wood.dds" CustomInt="1,64" Size="174776" />
+        <Resource Manager="Textures" Filename="Models\Textures\wood_normalmap.dds" CustomInt="1,0" Size="174776" />
+        <Resource Manager="Textures" Filename="PlainWhite.DDS" CustomInt="1,64" Size="64" />
+        <Resource Manager="EffectLibs" Filename="Shaders\BaseShaders.ShaderLib" Size="63088" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models/Door.model" CustomInt="1,2" Size="280" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="392352" />
+    </Resources>
+</root>

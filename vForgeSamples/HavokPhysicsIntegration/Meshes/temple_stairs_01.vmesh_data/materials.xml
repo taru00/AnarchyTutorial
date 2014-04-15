@@ -1,0 +1,7 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="m_wall_01" userflags="0" diffuse="Textures\Temple_Wall_01_d.tga" Lighting="Lightmapping" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" specmul="0" specexp="1" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" />
+        <Material name="m_stairs" userflags="0" diffuse="Textures\Temple_Stairs_01_d.tga" Lighting="Lightmapping" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" specmul="0" specexp="1" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" />
+        <Material name="m_trim" userflags="0" diffuse="Textures\Temple_Trim_01_d.tga" Lighting="Lightmapping" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" datadirectoryrelative="FALSE" zbias="0,0,0" specmul="0" specexp="1" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" />
+    </Materials>
+</root>
