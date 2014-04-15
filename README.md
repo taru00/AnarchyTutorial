@@ -1,4 +1,5 @@
-anarchy3d
+project anarchy tutorial for beginners
 =========
 
-project anarchy based 3d game tutorial 
+
+
