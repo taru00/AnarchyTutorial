@@ -1,0 +1,7 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="HavokaBlock" userflags="0" diffuse="..\Textures\Block.tga" Lighting="DynamicOnly" mobileflags="0" pass="Auto" transparency="opaque" doublesided="FALSE" depthwrite="TRUE" zbias="0,0,0" specmul="0.55" specexp="6.06287" parallaxscale="-0.03" parallaxbias="-0.015" ambient="0,0,0,255" sortingkey="0" alphathreshold="0.25" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" datadirectoryrelative="FALSE">
+            <Shader library="\Shaders\MobileShaders.ShaderLib" effect="Diffuse" paramstring="CullMode=back;DepthWrite=true;MaterialParams=0.55,6.06287,-0.03,-0.015;AlphaThreshold=0.25;MaterialAmbient=0,0,0;VertexLighting=False;DynamicLightNormalMapping=False;" />
+        </Material>
+    </Materials>
+</root>

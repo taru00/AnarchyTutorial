@@ -1,0 +1,3 @@
+LoadEnginePlugin:vRemoteInput
+LoadEnginePlugin:VisionEnginePlugin
+LoadEnginePlugin:vHavok

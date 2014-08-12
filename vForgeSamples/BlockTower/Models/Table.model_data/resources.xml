@@ -1,0 +1,11 @@
+<root>
+    <Resources Version="1" Count="7" PathType="Project">
+        <Resource Manager="FILE" Filename="Models\Table.model_data\materials.xml" OwnerRes="5" Size="1271" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="2151904" />
+        <Resource Manager="Textures" Filename="Textures\rug.tga" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Textures" Filename="Textures\table.tga" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Textures" Filename="Textures\tabletop.tga" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\Table.model" CustomInt="1,2" Size="168" />
+        <Resource Manager="EffectLibs" Filename="Shaders\vMaterial.ShaderLib" Size="390384" />
+    </Resources>
+</root>
