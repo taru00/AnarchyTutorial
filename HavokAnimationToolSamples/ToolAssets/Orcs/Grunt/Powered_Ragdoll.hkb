@@ -1,5 +1,5 @@
 ﻿<!--HBT-->
-<HBT version="1.0" appversion="2013.25" namespace="_Powered_Ragdoll_hkb_">
+<HBT version="1.0" appversion="2014.05" namespace="_Powered_Ragdoll_hkb_">
     <HBT_ITEM type="HavokTools.hkStateMachine" name="StateMachine00" priority="1">
         <hkStateMachine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <IncomingRefs>
@@ -14,12 +14,17 @@
                     <string>__local__:HavokTools.hkState:Blownback using HitDirection:ParentNodes</string>
                     <string>__local__:HavokTools.hkState:Simple Blownback:ParentNodes</string>
                     <string>__local__:HavokTools.hkState:Orc Grunt Club Idle:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Get hit Blownback:ParentNodes</string>
+                    <string>__local__:HavokTools.hkState:Get hit Blownback with CharacterController:ParentNodes</string>
                 </MangledTargetNames>
             </States>
             <Transitions>
                 <MangledTargetNames>
                     <string>__local__:HavokTools.hkTransition:to Simple hit Blownback:ParentNodes</string>
                     <string>__local__:HavokTools.hkTransition:to Blownback using HitDirection:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Get hit Blownback:ParentNodes</string>
+                    <string>__local__:HavokTools.hkTransition:to Get hit Blownback with CharacterController:ParentNodes</string>
                 </MangledTargetNames>
             </Transitions>
             <StartState>
@@ -56,9 +61,9 @@
                 <MangledTargetNames />
             </CurrentStateIDVariable>
             <MaxSimultaneousTransitions>32</MaxSimultaneousTransitions>
-            <OffsetX>158.734924</OffsetX>
-            <OffsetY>80.3915558</OffsetY>
-            <Zoom>0.8377657</Zoom>
+            <OffsetX>90.3542557</OffsetX>
+            <OffsetY>66.28743</OffsetY>
+            <Zoom>0.89087677</Zoom>
             <WrapAroundStateID>false</WrapAroundStateID>
             <SelfTransitionMode>DontTransition</SelfTransitionMode>
         </hkStateMachine>
@@ -1469,7 +1474,7 @@
                 <MangledName>__local__:HavokTools.hkState:Simple Blownback:ParentNodes</MangledName>
             </ParentNodes>
             <Notes />
-            <X>-83.48243</X>
+            <X>-84.60492</X>
             <Y>273.6781</Y>
             <TransitionsIn>
                 <MangledTargetNames>
@@ -1517,20 +1522,22 @@
                 <MangledName>__local__:HavokTools.hkState:Orc Grunt Club Idle:ParentNodes</MangledName>
             </ParentNodes>
             <Notes />
-            <X>12.2295761</X>
-            <Y>73.92481</Y>
+            <X>19.8735123</X>
+            <Y>142.467834</Y>
             <TransitionsIn>
-                <MangledTargetNames />
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:StateTo</string>
+                </MangledTargetNames>
             </TransitionsIn>
             <TransitionsOut>
                 <MangledTargetNames>
-                    <string>__local__:HavokTools.hkTransition:to Simple hit Blownback:StateFrom</string>
                     <string>__local__:HavokTools.hkTransition:to Blownback using HitDirection:StateFrom</string>
+                    <string>__local__:HavokTools.hkTransition:to Simple hit Blownback:StateFrom</string>
                 </MangledTargetNames>
             </TransitionsOut>
             <ChildNode>
                 <MangledTargetNames>
-                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Idle00:ParentNodes</string>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:ParentNodes</string>
                 </MangledTargetNames>
             </ChildNode>
             <StateID>4</StateID>
@@ -2095,5 +2102,769 @@
                 </Values>
             </ParameterList>
         </hkCustomTransitionEffect>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to State00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to State00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Orc Grunt Club Idle" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Orc Grunt Club Idle" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect01:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Orc Grunt Club Idle:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Orc Grunt Club Idle:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomTransitionEffect" name="CustomTransitionEffect01" priority="50">
+        <hkCustomTransitionEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect01:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect01:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Blending Transition Effect</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_duration</string>
+                    <string>m_toGeneratorStartTimeFraction</string>
+                    <string>m_flags</string>
+                    <string>m_selfTransitionMode</string>
+                    <string>m_eventMode</string>
+                    <string>m_endMode</string>
+                    <string>m_blendCurve</string>
+                    <string>m_alignmentBone</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:string">FLAG_NONE</anyType>
+                    <anyType xsi:type="xsd:string">SELF_TRANSITION_MODE_CONTINUE_IF_CYCLIC_BLEND_IF_ACYCLIC</anyType>
+                    <anyType xsi:type="xsd:string">EVENT_MODE_DEFAULT</anyType>
+                    <anyType xsi:type="xsd:string">END_MODE_NONE</anyType>
+                    <anyType xsi:type="xsd:string">BLEND_CURVE_SMOOTH</anyType>
+                    <anyType xsi:type="xsd:short">-1</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomTransitionEffect>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Clip00" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Clip00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Clip00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Get_hit_Blownback_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Get_hit_Blownback.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_SINGLE_PLAY</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Get hit Blownback" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Get hit Blownback:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Get hit Blownback:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>218.330353</X>
+            <Y>143.618134</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Get hit Blownback:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Clip00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>6</StateID>
+            <StateProbability>1</StateProbability>
+            <W>124.338257</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Get hit Blownback" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Get hit Blownback:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Get hit Blownback:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Get hit Blownback" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Get hit Blownback:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Get hit Blownback:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect00:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Get hit Blownback:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Get hit Blownback:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomTransitionEffect" name="CustomTransitionEffect00" priority="50">
+        <hkCustomTransitionEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Blending Transition Effect</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_duration</string>
+                    <string>m_toGeneratorStartTimeFraction</string>
+                    <string>m_flags</string>
+                    <string>m_selfTransitionMode</string>
+                    <string>m_eventMode</string>
+                    <string>m_endMode</string>
+                    <string>m_blendCurve</string>
+                    <string>m_alignmentBone</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:string">FLAG_NONE</anyType>
+                    <anyType xsi:type="xsd:string">SELF_TRANSITION_MODE_CONTINUE_IF_CYCLIC_BLEND_IF_ACYCLIC</anyType>
+                    <anyType xsi:type="xsd:string">EVENT_MODE_DEFAULT</anyType>
+                    <anyType xsi:type="xsd:string">END_MODE_NONE</anyType>
+                    <anyType xsi:type="xsd:string">BLEND_CURVE_SMOOTH</anyType>
+                    <anyType xsi:type="xsd:short">-1</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomTransitionEffect>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Get hit Blownback00" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Get hit Blownback00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes />
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkClip" name="Clip01" priority="50">
+        <hkClip xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkClip:Clip01:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkClip:Clip01:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <AnimationCharacterProperty>
+                <MangledTargetNames />
+            </AnimationCharacterProperty>
+            <Animation>
+                <MangledTargetNames>
+                    <string>_Orc_Grunt_Club_Get_hit_Blownback_hkt_:HavokTools.hkAnimation:Orc_Grunt_Club_Get_hit_Blownback.hkt:ParentNodes</string>
+                </MangledTargetNames>
+            </Animation>
+            <AnimationBundleName>Default_Bundle</AnimationBundleName>
+            <PlaybackMode>MODE_SINGLE_PLAY</PlaybackMode>
+            <DisableUseAnnotations>false</DisableUseAnnotations>
+            <ShowAnnotations>true</ShowAnnotations>
+            <ContinueMotionAtEnd>false</ContinueMotionAtEnd>
+            <SyncHalfCycleInPingPong>false</SyncHalfCycleInPingPong>
+            <FlagMirror>false</FlagMirror>
+            <ForceDensePose>false</ForceDensePose>
+            <PlaybackSpeedMultiplier>1</PlaybackSpeedMultiplier>
+            <CropStart>0</CropStart>
+            <CropEnd>0</CropEnd>
+            <StartTime>0</StartTime>
+            <UserControlledPoint>0</UserControlledPoint>
+            <ClipDuration>0</ClipDuration>
+            <PlaybackSpeedMultiplierVariable>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierVariable>
+            <CropStartVariable>
+                <MangledTargetNames />
+            </CropStartVariable>
+            <CropEndVariable>
+                <MangledTargetNames />
+            </CropEndVariable>
+            <StartTimeVariable>
+                <MangledTargetNames />
+            </StartTimeVariable>
+            <UserControlledPointVariable>
+                <MangledTargetNames />
+            </UserControlledPointVariable>
+            <ClipDurationVariable>
+                <MangledTargetNames />
+            </ClipDurationVariable>
+            <ClipEventTriggers>
+                <MangledTargetNames />
+            </ClipEventTriggers>
+            <PlaybackSpeedMultiplierCharprop>
+                <MangledTargetNames />
+            </PlaybackSpeedMultiplierCharprop>
+            <CropStartCharprop>
+                <MangledTargetNames />
+            </CropStartCharprop>
+            <CropEndCharprop>
+                <MangledTargetNames />
+            </CropEndCharprop>
+            <StartTimeCharprop>
+                <MangledTargetNames />
+            </StartTimeCharprop>
+            <UserControlledPointCharprop>
+                <MangledTargetNames />
+            </UserControlledPointCharprop>
+            <ClipDurationCharprop>
+                <MangledTargetNames />
+            </ClipDurationCharprop>
+            <ClipEvents>
+                <MangledTargetNames />
+            </ClipEvents>
+        </hkClip>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkState" name="Get hit Blownback with CharacterController" priority="50">
+        <hkState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkState:Get hit Blownback with CharacterController:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkState:Get hit Blownback with CharacterController:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>-30.8623047</X>
+            <Y>35.85913</Y>
+            <TransitionsIn>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkTransition:to Get hit Blownback with CharacterController:StateTo</string>
+                </MangledTargetNames>
+            </TransitionsIn>
+            <TransitionsOut>
+                <MangledTargetNames />
+            </TransitionsOut>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+            <StateID>7</StateID>
+            <StateProbability>1</StateProbability>
+            <W>288.349182</W>
+            <H>25</H>
+            <NestedTransitionsIn>
+                <MangledTargetNames />
+            </NestedTransitionsIn>
+            <NestedTransitionsOut>
+                <MangledTargetNames />
+            </NestedTransitionsOut>
+            <EnterNotifyEvents>
+                <MangledTargetNames />
+            </EnterNotifyEvents>
+            <ExitNotifyEvents>
+                <MangledTargetNames />
+            </ExitNotifyEvents>
+            <EnterNotifyEventPayloads>
+                <MangledTargetNames />
+            </EnterNotifyEventPayloads>
+            <ExitNotifyEventPayloads>
+                <MangledTargetNames />
+            </ExitNotifyEventPayloads>
+        </hkState>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomModifier" name="CharacterControllerModifier00" priority="50">
+        <hkCustomModifier xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Character Controller Modifier</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_enable</string>
+                    <string>m_controlData</string>
+                    <string>m_initialVelocity</string>
+                    <string>m_initialVelocityCoordinates</string>
+                    <string>m_motionMode</string>
+                    <string>m_forceDownwardMomentum</string>
+                    <string>m_applyGravity</string>
+                    <string>m_setInitialVelocity</string>
+                    <string>m_isTouchingGround</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>m_verticalGain</string>
+                            <string>m_horizontalCatchUpGain</string>
+                            <string>m_maxVerticalSeparation</string>
+                            <string>m_maxHorizontalSeparation</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">1</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="hkCustomParameterList">
+                        <Names>
+                            <string>x</string>
+                            <string>y</string>
+                            <string>z</string>
+                            <string>w</string>
+                        </Names>
+                        <Values>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                            <anyType xsi:type="xsd:float">0</anyType>
+                        </Values>
+                    </anyType>
+                    <anyType xsi:type="xsd:string">INITIAL_VELOCITY_IN_WORLD_COORDINATES</anyType>
+                    <anyType xsi:type="xsd:string">MOTION_MODE_FOLLOW_ANIMATION</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                    <anyType xsi:type="xsd:boolean">false</anyType>
+                    <anyType xsi:type="xsd:boolean">true</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomModifier>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator00" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator00:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Clip01:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkEvent" name="to Get hit Blownback with CharacterController" priority="1">
+        <hkEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkEvent:to Get hit Blownback with CharacterController:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkEvent:to Get hit Blownback with CharacterController:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <CustomNotes />
+            <Global>false</Global>
+            <Silent>false</Silent>
+            <SyncPoint>false</SyncPoint>
+        </hkEvent>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkTransition" name="to Get hit Blownback with CharacterController" priority="50">
+        <hkTransition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkTransition:to Get hit Blownback with CharacterController:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkTransition:to Get hit Blownback with CharacterController:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <TransitionEffect>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect02:ParentNodes</string>
+                </MangledTargetNames>
+            </TransitionEffect>
+            <EffectType>Deprecated</EffectType>
+            <EventMode>Default</EventMode>
+            <SelfTransitionMode>ContinueIfCyclicBlendIfAcyclic</SelfTransitionMode>
+            <Duration>0.1</Duration>
+            <ToStateBeginAtTime>0</ToStateBeginAtTime>
+            <SyncLocalTime>false</SyncLocalTime>
+            <IgnoreFromWorldFromModel>false</IgnoreFromWorldFromModel>
+            <EndMode>None</EndMode>
+            <ChildNode>
+                <MangledTargetNames />
+            </ChildNode>
+            <BlendInDuration>0.1</BlendInDuration>
+            <BlendOutDuration>0.1</BlendOutDuration>
+            <CallbackString />
+            <EnableCallback>false</EnableCallback>
+            <StateFrom />
+            <StateTo>
+                <MangledName>__local__:HavokTools.hkTransition:to Get hit Blownback with CharacterController:StateTo</MangledName>
+            </StateTo>
+            <Event>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkEvent:to Get hit Blownback with CharacterController:ParentNodes</string>
+                </MangledTargetNames>
+            </Event>
+            <CurvePoint1>0.33</CurvePoint1>
+            <CurvePoint2>0.66</CurvePoint2>
+            <Disabled>false</Disabled>
+            <DoNotInterruptWhilePlaying>false</DoNotInterruptWhilePlaying>
+            <InterruptionPriority>0</InterruptionPriority>
+            <UseFromStateDuringTransition>false</UseFromStateDuringTransition>
+            <TriggerWindowBeginEvent>
+                <MangledTargetNames />
+            </TriggerWindowBeginEvent>
+            <TriggerWindowEndEvent>
+                <MangledTargetNames />
+            </TriggerWindowEndEvent>
+            <InitiateWindowBeginEvent>
+                <MangledTargetNames />
+            </InitiateWindowBeginEvent>
+            <InitiateWindowEndEvent>
+                <MangledTargetNames />
+            </InitiateWindowEndEvent>
+            <TriggerWindowBeginTime>-1</TriggerWindowBeginTime>
+            <TriggerWindowEndTime>-1</TriggerWindowEndTime>
+            <InitiateWindowBeginTime>-1</InitiateWindowBeginTime>
+            <InitiateWindowEndTime>-1</InitiateWindowEndTime>
+            <NestedStateFrom />
+            <NestedStateTo />
+            <IsGlobalWildcard>false</IsGlobalWildcard>
+            <IsLocalWildcard>true</IsLocalWildcard>
+            <DisallowRandomTransition>false</DisallowRandomTransition>
+            <DisallowReturnToPreviousState>false</DisallowReturnToPreviousState>
+            <AllowSelfTransition>false</AllowSelfTransition>
+            <AbutAtEndOfFromState>false</AbutAtEndOfFromState>
+            <Multiple>false</Multiple>
+            <DefaultMultiple>false</DefaultMultiple>
+            <Condition>
+                <MangledTargetNames />
+            </Condition>
+        </hkTransition>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkCustomTransitionEffect" name="CustomTransitionEffect02" priority="50">
+        <hkCustomTransitionEffect xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect02:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkCustomTransitionEffect:CustomTransitionEffect02:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <NodeType>Blending Transition Effect</NodeType>
+            <ParameterList>
+                <Names>
+                    <string>m_duration</string>
+                    <string>m_toGeneratorStartTimeFraction</string>
+                    <string>m_flags</string>
+                    <string>m_selfTransitionMode</string>
+                    <string>m_eventMode</string>
+                    <string>m_endMode</string>
+                    <string>m_blendCurve</string>
+                    <string>m_alignmentBone</string>
+                </Names>
+                <Values>
+                    <anyType xsi:type="xsd:float">0.5</anyType>
+                    <anyType xsi:type="xsd:float">0</anyType>
+                    <anyType xsi:type="xsd:string">FLAG_NONE</anyType>
+                    <anyType xsi:type="xsd:string">SELF_TRANSITION_MODE_CONTINUE_IF_CYCLIC_BLEND_IF_ACYCLIC</anyType>
+                    <anyType xsi:type="xsd:string">EVENT_MODE_DEFAULT</anyType>
+                    <anyType xsi:type="xsd:string">END_MODE_NONE</anyType>
+                    <anyType xsi:type="xsd:string">BLEND_CURVE_SMOOTH</anyType>
+                    <anyType xsi:type="xsd:short">-1</anyType>
+                </Values>
+            </ParameterList>
+        </hkCustomTransitionEffect>
+    </HBT_ITEM>
+    <HBT_ITEM type="HavokTools.hkModifierGenerator" name="ModifierGenerator01" priority="50">
+        <hkModifierGenerator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <IncomingRefs>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:IncomingRefs</MangledName>
+            </IncomingRefs>
+            <ParentNodes>
+                <MangledName>__local__:HavokTools.hkModifierGenerator:ModifierGenerator01:ParentNodes</MangledName>
+            </ParentNodes>
+            <Notes />
+            <X>0</X>
+            <Y>0</Y>
+            <ChildModifier>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkCustomModifier:CharacterControllerModifier00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildModifier>
+            <ChildNode>
+                <MangledTargetNames>
+                    <string>__local__:HavokTools.hkClip:Orc Grunt Club Idle00:ParentNodes</string>
+                </MangledTargetNames>
+            </ChildNode>
+        </hkModifierGenerator>
     </HBT_ITEM>
 </HBT>

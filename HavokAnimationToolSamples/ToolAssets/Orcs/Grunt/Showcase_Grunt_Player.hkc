@@ -1,9 +1,9 @@
 ﻿<!--HBT-->
-<HBT version="1.0" appversion="2013.25" namespace="_Grunt_Player_hkc_">
-    <HBT_ITEM type="HavokTools.hkCharacter" name="Grunt_Player.hkc" priority="1">
+<HBT version="1.0" appversion="2014.05" namespace="_Showcase_Grunt_Player_hkc_">
+    <HBT_ITEM type="HavokTools.hkCharacter" name="Showcase_Grunt_Player.hkc" priority="1">
         <hkCharacter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
             <IncomingRefs>
-                <MangledName>__local__:HavokTools.hkCharacter:Grunt_Player.hkc:IncomingRefs</MangledName>
+                <MangledName>__local__:HavokTools.hkCharacter:Showcase_Grunt_Player.hkc:IncomingRefs</MangledName>
             </IncomingRefs>
             <ParentNodes />
             <Notes />
