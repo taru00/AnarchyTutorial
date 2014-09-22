@@ -1,6 +1,6 @@
 
 function OnAfterSceneLoaded(self)
-  self.map = Input:CreateMap("InputMap")
+  self.map = Input:CreateMap()
   local w, h = Screen:GetViewportSize()
 
   self.map:MapTrigger("X", {0, 0, w, h}, "CT_TOUCH_ABS_X")

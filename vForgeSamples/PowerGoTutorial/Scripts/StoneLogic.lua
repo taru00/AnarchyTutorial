@@ -1,4 +1,4 @@
--- constants
+﻿-- constants
 MAX_POWER_TIME_DIFF = 1.5f
 
 SHOOT_STATE_IDLE = 1
@@ -15,7 +15,7 @@ function OnAfterSceneLoaded(self)
   self.RigidBody = self:GetComponentOfType("vHavokRigidBody")
   Vision.Assert(self.RigidBody ~= nil, "Rigid Body is missing!")
 
-  self.inputmap = Input:CreateMap("InputMap")
+  self.inputmap = Input:CreateMap()
   local w, h = Screen:GetViewportSize()
 
   self.inputmap:MapTrigger("X", {0, 0, w, h}, "CT_TOUCH_ABS_X")

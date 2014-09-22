@@ -6,7 +6,7 @@ function OnAfterSceneLoaded(self)
 	self.MoveSpeed = 5
 	self.RotateSpeed = 50
 
-	self.controls = Input:CreateMap("InputMap")	
+	self.controls = Input:CreateMap()	
 	self.character = self:GetComponentOfType("vHavokCharacterController")
   self.behavior = self:GetComponentOfType("vHavokBehaviorComponent")
     

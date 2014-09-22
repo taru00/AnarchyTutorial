@@ -1,7 +1,7 @@
 G.useRemoteInput = false and (Application:GetPlatformName() == "WIN32DX9" or Application:GetPlatformName() == "WIN32DX11")
 
 function OnAfterSceneLoaded(self)
-  self.cameraMap = Input:CreateMap("CameraMap")
+  self.cameraMap = Input:CreateMap()
   self.w, self.h = Screen:GetViewportSize()
   
   if G.useRemoteInput then
